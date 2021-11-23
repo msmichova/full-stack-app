@@ -1,0 +1,23 @@
+<!-- TODO: create a grid layout? This one does not work -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div *ngFor="let book of book_list">
+                <div class="card mb-3"                
+                    [routerLink]="['/books', book._id]"
+                    style="width: 40rem; margin: auto; display: flex; cursor: pointer;">
+                    <div class="card-header">
+                        <h2 class="card-title">{{book.title}}</h2>
+                        <h3 class="card-subtitle mb-2 text-muted">Written by {{book.author}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.</p>
+                        <a href="https://loremipsum.io/ultimate-list-of-lorem-ipsum-generators/">-> Hipster Ipsum source</a>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- col -->
+    </div>      <!-- row -->
+</div>          <!-- container -->
