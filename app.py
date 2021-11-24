@@ -235,7 +235,7 @@ def delete_book(id):
 
 
 @app.route("/api/v1.0/books/<string:id>/reviews", methods=["POST"])
-@jwt_required
+# @jwt_required
 def add_new_review(id):
     if checkHex(str(id)) == False:
         return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
@@ -243,6 +243,7 @@ def add_new_review(id):
         if "name" in request.form and "comment" in request.form and "stars" in request.form:
             new_review = {
                 "_id": ObjectId(),
+                # "userid" : "619d186efda80f47925fe808",
                 "name": request.form["name"],
                 "comment": request.form["comment"],
                 "stars": request.form["stars"]
