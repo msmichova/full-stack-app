@@ -9,6 +9,7 @@ import { WebService } from './web.service';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { BookComponent } from './book.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 var routes: any = [
   {
@@ -37,6 +38,7 @@ var routes: any = [
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
+    ReactiveFormsModule
   ],
   providers: [WebService],
   bootstrap: [AppComponent]
