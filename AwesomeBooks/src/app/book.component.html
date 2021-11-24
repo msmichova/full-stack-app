@@ -2,19 +2,21 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
-            <div class="card text-white bg-secondary mb-3" style="width: 18rem; margin: auto; display: flex;">
-                <div class="card-header bg-success">
-                    <h2 class="card-title">{{book.title}}</h2>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Written by {{book.author}}</p>
-                    <div *ngFor="let review of book.reviews">
-                        <p>{{review.name}} said:</p>
-                        <p>{{review.comment}}</p>
-                        <p>Rating: {{review.stars}}</p>
+            <div *ngFor = "let book of book | async"> 
+                <div class="card text-white bg-secondary mb-3" style="width: 18rem; margin: auto; display: flex;">
+                    <div class="card-header bg-success">
+                        <h2 class="card-title">{{book.title}}</h2>
                     </div>
-                </div>
-                <div class="card-footer">
+                    <div class="card-body">
+                        <p class="card-text">Written by {{book.author}}</p>
+                        <div *ngFor="let review of book.reviews">
+                            <p>{{review.name}} said:</p>
+                            <p>{{review.comment}}</p>
+                            <p>Rating: {{review.stars}}</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                    </div>
                 </div>
             </div>
         </div>  <!-- col -->

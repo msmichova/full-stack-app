@@ -9,16 +9,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BookComponent {
     constructor(
-        private webService: WebService,
-        private route: ActivatedRoute
+        public webService: WebService,
+        public route: ActivatedRoute
     ) {}
 
-    async ngOnInit() {    // fired automatically whenever an object has been created
-        var response = await this.webService.getBook(
-            this.route.snapshot.params.id
-        );
-        this.book = response;    
-    }
+    // async ngOnInit() {    // fired automatically whenever an object has been created
+    //     var response = await this.webService.getBook(
+    //         this.route.snapshot.params.id
+    //     );
+    //     this.book = response;    
+    // }
 
-    book: any;     // to avoid type checking errors
+    ngOnInit() {
+        this.book = this.webService.getBook(this.route.snapshot.params.id);
+    } 
+
+    book: any = [];     // to avoid type checking errors
 }

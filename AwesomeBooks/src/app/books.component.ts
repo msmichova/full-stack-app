@@ -7,12 +7,29 @@ import { WebService } from './web.service';
   styleUrls: ['./books.component.css']
 })
 export class BooksComponent {
-    constructor(private webService: WebService) {}
+    constructor(public webService: WebService) {}
 
-    async ngOnInit() {    // fired automatically whenever an object has been created
-        var response = await this.webService.getBooks();
-        this.book_list = response;    
+    ngOnInit() {    // fired automatically whenever an object has been created
+      if (sessionStorage.page) {
+        this.page = Number(sessionStorage.page)
+      }
+      this.book_list = this.webService.getBooks(this.page);
     }
 
-    book_list: any;     // to avoid type checking errors
+    previousPage() {
+      if (this.page > 1) {
+        this.page = this.page - 1;
+        sessionStorage.page = this.page; 
+        this.book_list = this.webService.getBooks(this.page);
+      }
+    }
+
+    nextPage() {
+      this.page = this.page + 1;
+      sessionStorage.page = this.page; 
+      this.book_list = this.webService.getBooks(this.page);
+    }
+
+    book_list: any = [];     // to avoid type checking errors
+    page: number = 1;
 }

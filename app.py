@@ -19,6 +19,7 @@ blacklist = db.blacklist
 
 app.config['SECRET_KEY'] = 'mysecret'
 
+
 def jwt_required(func):
     @wraps(func)
     def jwt_required_wrapper(*args, **kwargs):
@@ -27,22 +28,23 @@ def jwt_required(func):
         if 'x-access-token' in request.headers:
             token = request.headers['x-access-token']
         if not token:
-            return jsonify( \
-            {'message' : 'Token is missing'}), 401
+            return jsonify(
+                {'message': 'Token is missing'}), 401
         try:
-            data = jwt.decode(token, \
-            app.config['SECRET_KEY'])
+            data = jwt.decode(token,
+                              app.config['SECRET_KEY'])
         except:
-            return jsonify( \
-            {'message' : 'Token is invalid'}), 401
+            return jsonify(
+                {'message': 'Token is invalid'}), 401
 
-        bl_token = blacklist.find_one({"token":token})
+        bl_token = blacklist.find_one({"token": token})
         if bl_token is not None:
-            return make_response(jsonify({"message" : "Token has been cancelled"}), 401)
+            return make_response(jsonify({"message": "Token has been cancelled"}), 401)
 
         return func(*args, **kwargs)
 
     return jwt_required_wrapper
+
 
 def admin_required(func):
     @wraps(func)
@@ -52,26 +54,29 @@ def admin_required(func):
         if data["admin"]:
             return func(*args, **kwargs)
         else:
-            return jsonify( {'message' : 'Admin access required'}), 401
+            return jsonify({'message': 'Admin access required'}), 401
     return admin_required_wrapper
 
 # Source: https://www.pythonprogramming.in/python-wraps-decorator-with-arguments.html
+
+
 def review_owner_required_with_args(bid, rid):
     def review_owner_required(func):
         @wraps(func)
         def review_owner_required_wrapper(*args, **kwargs):
-            review_owner = books.find_one({"_id" : bid, "reviews._id" : rid})
-            if review_owner: 
+            review_owner = books.find_one({"_id": bid, "reviews._id": rid})
+            if review_owner:
                 token = request.headers["x-access-token"]
                 data = jwt.decode(token, app.config["SECRET_KEY"])
                 if data["userid"] == review_owner["_id"]:
                     return func(*args, **kwargs)
                 else:
-                    return jsonify( {'message' : 'Admin or review owner access required'}), 401
+                    return jsonify({'message': 'Admin or review owner access required'}), 401
             else:
-                return jsonify( {'message' : 'Incorrect book or review ID'}), 401
+                return jsonify({'message': 'Incorrect book or review ID'}), 401
         return review_owner_required_wrapper
     return review_owner_required
+
 
 def sort_results(sort_by):
     sort_by_options = ["author_asc", "author_desc", "title_asc", "title_desc"]
@@ -82,30 +87,32 @@ def sort_results(sort_by):
         return "author", 1
     elif sort_by == "author_desc":
         return "author", -1
-    else: # title_asc 
+    else:  # title_asc
         return "title", 1
 
 
 # Function to check if the string
 # represents a hexadecimal number
 # adopted from: https://www.geeksforgeeks.org/check-if-a-string-represents-a-hexadecimal-number-or-not/
-def checkHex(s):  
+def checkHex(s):
     # Iterate over string
     for ch in s:
         # Check if the character
         # is invalid
-        if ((ch < '0' or ch > '9') and (ch < 'a' or ch > 'f')):                
-            return False 
-    # Check for correct length 
+        if ((ch < '0' or ch > '9') and (ch < 'a' or ch > 'f')):
+            return False
+    # Check for correct length
     if len(s) != 24:
-        return False      
+        return False
     # Print true if all
     # characters are valid
     return True
 
+
 @app.route("/", methods=["GET"])
 def index():
     return make_response("<h1>Books Homepage</h1>", 200)
+
 
 @app.route("/api/v1.0/books", methods=["GET"])
 def show_all_books():
@@ -118,7 +125,7 @@ def show_all_books():
     if request.args.get('sort_by'):
         sort_by_arg = request.args.get('sort_by')
     page_start = (page_size * (page_num - 1))
-    
+
     arg_name, order = sort_results(sort_by_arg)
 
     data_to_return = []
@@ -127,21 +134,25 @@ def show_all_books():
         for review in book['reviews']:
             review['_id'] = str(review['_id'])
         data_to_return.append(book)
-    return make_response( jsonify(data_to_return), 200 )
+    return make_response(jsonify(data_to_return), 200)
+
 
 @app.route("/api/v1.0/books/<string:id>", methods=["GET"])
-def show_one_book(id):  
+def show_one_book(id):
     if checkHex(str(id)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
-        book = books.find_one({ '_id' : ObjectId(id) })
+        data_to_return = []
+        book = books.find_one({'_id': ObjectId(id)})
         if book is not None:
             book['_id'] = str(book['_id'])
             for review in book['reviews']:
                 review['_id'] = str(review['_id'])
-            return make_response( jsonify( book ), 200 )
+            data_to_return.append(book)
+            return make_response(jsonify(data_to_return), 200)
         else:
-            return make_response( jsonify({"error" : "Invalid book ID"}), 404 )
+            return make_response(jsonify({"error": "Invalid book ID"}), 404)
+
 
 @app.route("/api/v1.0/books", methods=["POST"])
 @jwt_required
@@ -153,26 +164,27 @@ def add_book():
         "language" in request.form and \
         "link" in request.form and \
         "pages" in request.form and \
-        "year" in request.form:
+            "year" in request.form:
         new_book = {
-            "title" : request.form["title"],
-            "author" : request.form["author"],
-            "country" : request.form["country"],
-            "imageLink" : request.form["imageLink"],
-            "language" : request.form["language"],
-            "link" : request.form["link"],
-            "pages" : request.form["pages"],
-            "year" : request.form["year"],
-            "reviews" : []
+            "title": request.form["title"],
+            "author": request.form["author"],
+            "country": request.form["country"],
+            "imageLink": request.form["imageLink"],
+            "language": request.form["language"],
+            "link": request.form["link"],
+            "pages": request.form["pages"],
+            "year": request.form["year"],
+            "reviews": []
         }
         new_book_id = books.insert_one(new_book)
         new_book_link = \
-        "http://localhost:5000/api/v1.0/books/" \
-        + str(new_book_id.inserted_id)
-        
-        return make_response( jsonify({"url": new_book_link} ), 201)
+            "http://localhost:5000/api/v1.0/books/" \
+            + str(new_book_id.inserted_id)
+
+        return make_response(jsonify({"url": new_book_link}), 201)
     else:
-        return make_response( jsonify({"error":"Missing form data"} ), 404)
+        return make_response(jsonify({"error": "Missing form data"}), 404)
+
 
 @app.route("/api/v1.0/books/<string:id>", methods=["PUT"])
 @jwt_required
@@ -184,27 +196,28 @@ def edit_book(id):
         "language" in request.form and \
         "link" in request.form and \
         "pages" in request.form and \
-        "year" in request.form:
-        result = books.update_one( \
-            { "_id" : ObjectId(id) }, {
-                "$set" : {  "title" : request.form["title"],
-                            "author" : request.form["author"],
-                            "country" : request.form["country"],
-                            "imageLink" : request.form["imageLink"],
-                            "language" : request.form["language"],
-                            "link" : request.form["link"],
-                            "pages" : request.form["pages"],
-                            "year" : request.form["year"]
-                        }
-            } )
+            "year" in request.form:
+        result = books.update_one(
+            {"_id": ObjectId(id)}, {
+                "$set": {"title": request.form["title"],
+                         "author": request.form["author"],
+                         "country": request.form["country"],
+                         "imageLink": request.form["imageLink"],
+                         "language": request.form["language"],
+                         "link": request.form["link"],
+                         "pages": request.form["pages"],
+                         "year": request.form["year"]
+                         }
+            })
         if result.matched_count == 1:
             edited_book_link = \
-            "http://localhost:5000/api/v1.0/books/" + id
-            return make_response( jsonify({ "url":edited_book_link } ), 200)
+                "http://localhost:5000/api/v1.0/books/" + id
+            return make_response(jsonify({"url": edited_book_link}), 200)
         else:
-            return make_response( jsonify({ "error":"Invalid book ID" } ), 404)
+            return make_response(jsonify({"error": "Invalid book ID"}), 404)
     else:
-        return make_response( jsonify({ "error" : "Missing form data" } ), 404)
+        return make_response(jsonify({"error": "Missing form data"}), 404)
+
 
 @app.route("/api/v1.0/books/<string:id>", methods=["DELETE"])
 @jwt_required
@@ -212,94 +225,99 @@ def edit_book(id):
 def delete_book(id):
     # EXTRA FEATURE: Validation for hex
     if checkHex(str(id)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID format - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID format - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
-        result = books.delete_one( { "_id" : ObjectId(id) } )
+        result = books.delete_one({"_id": ObjectId(id)})
         if result.deleted_count == 1:
-            return make_response( jsonify( {} ), 204)
+            return make_response(jsonify({}), 204)
         else:
-            return make_response( jsonify( { "error" : "Invalid book ID" } ), 404)
+            return make_response(jsonify({"error": "Invalid book ID"}), 404)
 
 
 @app.route("/api/v1.0/books/<string:id>/reviews", methods=["POST"])
 @jwt_required
 def add_new_review(id):
     if checkHex(str(id)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
         if "name" in request.form and "comment" in request.form and "stars" in request.form:
             new_review = {
-                "_id" : ObjectId(),
-                "name" : request.form["name"],
-                "comment" : request.form["comment"],
-                "stars" : request.form["stars"]
+                "_id": ObjectId(),
+                "name": request.form["name"],
+                "comment": request.form["comment"],
+                "stars": request.form["stars"]
             }
-            books.update_one( { "_id" : ObjectId(id) }, \
-                { "$push": { "reviews" : new_review } } )
+            books.update_one({"_id": ObjectId(id)},
+                             {"$push": {"reviews": new_review}})
             new_review_link = \
-            "http://localhost:5000/api/v1.0/books/" \
-            + id +"/reviews/" + str(new_review['_id'])
-            return make_response( jsonify( { "url" : new_review_link } ), 201 )
-        else: 
-            return make_response( jsonify({"error":"Missing form data"} ), 404)
+                "http://localhost:5000/api/v1.0/books/" \
+                + id + "/reviews/" + str(new_review['_id'])
+            return make_response(jsonify({"url": new_review_link}), 201)
+        else:
+            return make_response(jsonify({"error": "Missing form data"}), 404)
+
 
 @app.route("/api/v1.0/books/<string:id>/reviews", methods=["GET"])
 def fetch_all_reviews(id):
     if checkHex(str(id)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
         data_to_return = []
-        book = books.find_one( \
-            { "_id" : ObjectId(id) }, \
-            { "reviews" : 1, "_id" : 0 } )
+        book = books.find_one(
+            {"_id": ObjectId(id)},
+            {"reviews": 1, "_id": 0})
         for review in book["reviews"]:
             review["_id"] = str(review["_id"])
             data_to_return.append(review)
-        return make_response( jsonify( data_to_return ), 200 )
+        return make_response(jsonify(data_to_return), 200)
+
 
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["GET"])
 def fetch_one_review(bid, rid):
     if checkHex(str(bid)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     elif checkHex(str(rid)) == False:
-        return make_response( jsonify({"error" : "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
         book = books.find_one( \
             # TODO: How can I use ObjectId(rid instead of regular rid)?
-            { "reviews._id" : ObjectId(rid) }, \
+            {"reviews._id": ObjectId(rid)}, \
             # { "reviews._id" : rid }, \
-            { "_id" : 0, "reviews.$" : 1 } )
+            {"_id": 0, "reviews.$": 1})
         if book is None:
-            return make_response( jsonify( {"error":"Invalid book ID or review ID"}),404)
-        
+            return make_response(jsonify({"error": "Invalid book ID or review ID"}), 404)
+
         book['reviews'][0]['_id'] = str(book['reviews'][0]['_id'])
 
-        return make_response( jsonify( book['reviews'][0]), 200)
+        return make_response(jsonify(book['reviews'][0]), 200)
 
 # EXTRA FEATURE: Checking that all fields are filled out
+
+
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["PUT"])
 @jwt_required
 def edit_review(bid, rid):
     if checkHex(str(bid)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     elif checkHex(str(rid)) == False:
-        return make_response( jsonify({"error" : "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     elif "name" in request.form and "comment" in request.form and "stars" in request.form:
         edited_review = {
-            "reviews.$.name" : request.form["name"],
-            "reviews.$.comment" : request.form["comment"],
-            "reviews.$.stars" : request.form['stars']
+            "reviews.$.name": request.form["name"],
+            "reviews.$.comment": request.form["comment"],
+            "reviews.$.stars": request.form['stars']
         }
-        books.update_one( \
-            { "reviews._id" : ObjectId(rid) }, \
+        books.update_one(
+            {"reviews._id": ObjectId(rid)}, \
             # { "reviews._id" : rid }, \
-            { "$set" : edited_review } )
+            {"$set": edited_review})
         edit_review_url = \
             "http://localhost:5000/api/v1.0/books/" + \
             bid + "/reviews/" + rid
-        return make_response( jsonify( {"url":edit_review_url} ), 200)
+        return make_response(jsonify({"url": edit_review_url}), 200)
     else:
-        return make_response( jsonify({"error":"Missing form data"} ), 404)
+        return make_response(jsonify({"error": "Missing form data"}), 404)
+
 
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["DELETE"])
 @jwt_required
@@ -307,55 +325,56 @@ def edit_review(bid, rid):
 # @admin_required
 def delete_review(bid, rid):
     if checkHex(str(bid)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     elif checkHex(str(rid)) == False:
-        return make_response( jsonify({"error" : "Invalid review ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid review ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
-        books.update_one( \
-            { "_id" : ObjectId(bid) }, \
-            { "$pull" : { "reviews" : \
-            # TODO: How can I use ObjectId(rid instead of regular rid)?
-            { "_id" : ObjectId(rid) } } } )
-            # { "_id" : rid } } } )
-        return make_response( jsonify( {} ), 204)
+        books.update_one(
+            {"_id": ObjectId(bid)},
+            {"$pull": {"reviews": \
+                       # TODO: How can I use ObjectId(rid instead of regular rid)?
+                       {"_id": ObjectId(rid)}}})
+        # { "_id" : rid } } } )
+        return make_response(jsonify({}), 204)
+
 
 @app.route('/api/v1.0/login', methods=['GET'])
 def login():
     auth = request.authorization
 
     if auth:
-        user = users.find_one({"userName" : auth.username})
+        user = users.find_one({"userName": auth.username})
         print(user)
         print(auth.password)
         print(user["password"])
         if user is not None:
             # result = bcrypt.checkpw(bytes(auth.password, "UTF-8"), user["password"])
             # print("PASSWORD CHECK: ", result)
-            # TODO: fix password authentication 
+            # TODO: fix password authentication
             # if bcrypt.checkpw(bytes(auth.password, "UTF-8"), user["password"]):
             if auth.password == 'password':
-                token = jwt.encode( \
-                    {   'user' : auth.username, \
+                token = jwt.encode(
+                    {'user': auth.username, \
                         # 'userid' : user["_id"], \
-                        'admin' : user["isAdmin"], \
-                        'exp' : datetime.datetime.utcnow() + \
-                                datetime.timedelta(minutes=30) \
-                    }, app.config['SECRET_KEY'])
-                return make_response(jsonify({'token' : token.decode('UTF-8')}), 200)
+                        'admin': user["isAdmin"], \
+                        'exp': datetime.datetime.utcnow() + \
+                        datetime.timedelta(minutes=30) \
+                     }, app.config['SECRET_KEY'])
+                return make_response(jsonify({'token': token.decode('UTF-8')}), 200)
             else:
-                return make_response(jsonify( {"message":"Bad password"}), 401)
+                return make_response(jsonify({"message": "Bad password"}), 401)
         else:
-            return make_response(jsonify( {"message":"Bad username"}), 401)
+            return make_response(jsonify({"message": "Bad username"}), 401)
 
-    return make_response(jsonify( {"message":"Authentication required"}), 401)
+    return make_response(jsonify({"message": "Authentication required"}), 401)
+
 
 @app.route('/api/v1.0/logout', methods=['GET'])
 @jwt_required
 def logout():
     token = request.headers["x-access-token"]
-    blacklist.insert_one({ "token" : token })
-    return make_response(jsonify({"message" : "Logout successful"}), 200)
-
+    blacklist.insert_one({"token": token})
+    return make_response(jsonify({"message": "Logout successful"}), 200)
 
 
 if __name__ == "__main__":
