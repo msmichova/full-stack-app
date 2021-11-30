@@ -7,8 +7,11 @@
                     [routerLink]="['/books', book._id]"
                     style="width: 40rem; margin: auto; display: flex; cursor: pointer;">
                     <div class="card-header">
-                        <h2 class="card-title">{{book.title}}</h2>
-                        <h3 class="card-subtitle mb-2 text-muted">Written by {{book.author}}</h3>
+                        <div>
+                            <h2 class="card-title">{{book.title}}</h2>
+                            <h3 class="card-subtitle mb-2 text-muted">Written by {{book.author}}</h3>
+                        </div>
+
                     </div>
                     <div class="card-body">
                         <p class="card-text">Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.</p>
@@ -23,13 +26,13 @@
 
     <div class="row">
         <div class="col-sm-6">
-            <button class="btn"
+            <button class="btn button-pagination"
                 (click)="previousPage()">
                 Previous
             </button>
         </div>
         <div class="col-sm-6 text-end">
-            <button class="btn"
+            <button class="btn button-pagination"
                 (click)="nextPage()">
                 Next
             </button>

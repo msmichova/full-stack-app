@@ -42,6 +42,11 @@ export class BookComponent {
         this.reviews = this.webService.getReviews(
             this.route.snapshot.params.id
         )
+
+        // this.review = this.webService.getReview(
+        //     this.book,
+        //     this.route.snapshot.params.id
+        // )
     } 
     onSubmit() {
         // console.log(this.reviewForm.value);
@@ -70,6 +75,21 @@ export class BookComponent {
                 this.isUntouched(); 
     }
 
+    onBookDelete() {
+        this.webService.deleteBook(this.route.snapshot.params.id)
+            .subscribe((response: any) => {
+                console.log({response});
+                // location.reload();
+                window.location.replace("http://localhost:4200/books/");
+                
+                // this.reviewForm.reset();
+                // this.reviews = this.webService.getReviews(
+                //     this.route.snapshot.params.id
+                // );
+            });    
+    }
+
     book: any = [];     // to avoid type checking errors
     reviews: any = [];
+    // review: any = [];
 }

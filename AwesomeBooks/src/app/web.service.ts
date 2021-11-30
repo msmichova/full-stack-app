@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 export class WebService {
 
     private bookID: any;
+    private reviewID: any;
     
     book_list: any;
 
@@ -23,12 +24,28 @@ export class WebService {
         );
     }
 
+    editBook() {}
+
+    deleteBook(id: any) {
+        this.bookID = id;
+        return this.http.delete(
+            'http://localhost:5000/api/v1.0/books/'+id
+        );
+    }
+
     getReviews(id: any) {
         return this.http.get(
             'http://localhost:5000/api/v1.0/books/' + 
             id + '/reviews'
         );
     }
+
+    // getReview(bookID: any, reviewID: any) {
+    //     return this.http.get(
+    //         'http://localhost:5000/api/v1.0/books/' + 
+    //         bookID + '/reviews/' + reviewID
+    //     );
+    // }
 
     postReview(review: any) {
         let postData = new FormData();
@@ -51,4 +68,20 @@ export class WebService {
             this.bookID + '/reviews', postData); 
 
     }
+
+    // TODO: Edit review
+    editReview(review: any) {}
+
+    // deleteReview(bookID: any, reviewID: any) {
+        
+    //     this.bookID = bookID;
+    //     this.reviewID = reviewID;
+        
+    //     return this.http.delete(
+    //         'http://localhost:5000/api/v1.0/books/' +
+    //         bookID + '/reviews/' + reviewID); 
+
+    // }
+
+
 }

@@ -4,8 +4,24 @@
 
 .card-header {
   background-color: #f5cac3;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-subtitle {
   font-size: 1.2rem;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button {
+  /* padding: 0px 6px; */
+  align-items: baseline;
+}
+
+.comment {
+  width: 60%;
 }

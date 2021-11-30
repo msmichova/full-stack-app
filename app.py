@@ -220,8 +220,8 @@ def edit_book(id):
 
 
 @app.route("/api/v1.0/books/<string:id>", methods=["DELETE"])
-@jwt_required
-@admin_required
+# @jwt_required
+# @admin_required
 def delete_book(id):
     # EXTRA FEATURE: Validation for hex
     if checkHex(str(id)) == False:

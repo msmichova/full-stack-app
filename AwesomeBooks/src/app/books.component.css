@@ -1,16 +1,18 @@
 .card-header {
     background-color: #f5cac3;
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-subtitle {
     font-size: 1.2rem;
 }
 
-.btn {
+.button-pagination {
     background-color: #c9184a;
     color: #ffffff; 
 }
 
-.btn:hover {
+.button-pagination:hover {
     background-color: #a4133c;
 }
