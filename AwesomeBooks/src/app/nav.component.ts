@@ -9,7 +9,13 @@ import { Router } from '@angular/router';
 })
 
 export class NavComponent {
-    constructor(public authService: AuthService,
-                public router: Router,
-            ) {}
+
+    imagePath: String;
+
+    constructor(
+        public authService: AuthService,
+        public router: Router,
+    ){
+        this.imagePath = "/assets/awesome-books-logo-white.png";
+    }
 }

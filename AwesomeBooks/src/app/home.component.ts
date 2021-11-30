@@ -7,5 +7,10 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(public authService: AuthService) {}
+
+  imagePath: String;
+  
+  constructor(public authService: AuthService) {
+    this.imagePath = "/assets/awesome-books-logo.png";
+  }
 }
