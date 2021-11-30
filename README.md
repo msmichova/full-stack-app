@@ -54,6 +54,9 @@ Mongo commands:
 ! first run python make_json.py
 then proceed
 
+pip command:
+pip install -r requirements.txt
+
 1. mongoimport --db booksDB --collection reviews --jsonArray reviews.json
 2. mongoimport --db booksDB --collection users --jsonArray users.json
 3. mongoimport --db booksDB --collection books --jsonArray books.json
