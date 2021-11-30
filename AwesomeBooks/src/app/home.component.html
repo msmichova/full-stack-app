@@ -1,14 +1,16 @@
-<h1 style="padding-top: 70px;">Welcome to Awesome Books!</h1>
-<img [src]="imagePath" />
-
-<ng-container
-    *ngIf = "authService.isAuthenticated$ | async;
-    else loggedOut">
-    <div *ngIf = "authService.user$ | async as user">
-        Good to see you back, {{ user.name }} :) 
-    </div>
-</ng-container>
-
-<ng-template #loggedOut>
-    Don't forget to login for a better experience
-</ng-template>
+<div class="home-content">
+    <h1>Welcome to Awesome Books!</h1>
+    <img [src]="imagePath" />
+    
+    <ng-container
+        *ngIf = "authService.isAuthenticated$ | async;
+        else loggedOut">
+        <div *ngIf = "authService.user$ | async as user">
+            Good to see you back, {{ user.name }} :) 
+        </div>
+    </ng-container>
+    
+    <ng-template #loggedOut>
+        Don't forget to login for a better experience
+    </ng-template>
+</div>

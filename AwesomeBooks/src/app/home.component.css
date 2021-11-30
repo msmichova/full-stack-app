@@ -1,0 +1,10 @@
+.home-content {
+    margin-top: 56px;
+    border: 3px solid rgb(255, 194, 27);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 56px);
+}
