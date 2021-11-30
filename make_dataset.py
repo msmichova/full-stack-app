@@ -29,7 +29,7 @@ def create_database():
                 "firstName": user["firstName"], \
                 "lastName": user["lastName"], \
                 "userName": user["userName"], \
-                "password": b'user["password"]', \
+                "password": bytes(user["password"], "UTF-8"), \
                 "email": user["email"], \
                 "isAdmin" : isAdmin \
                 }

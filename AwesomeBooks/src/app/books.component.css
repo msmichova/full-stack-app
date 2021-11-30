@@ -4,4 +4,13 @@
 
 .card-subtitle {
     font-size: 1.2rem;
-  }
+}
+
+.btn {
+    background-color: #c9184a;
+    color: #ffffff; 
+}
+
+.btn:hover {
+    background-color: #a4133c;
+}

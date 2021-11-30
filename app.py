@@ -281,9 +281,7 @@ def fetch_one_review(bid, rid):
         return make_response(jsonify({"error": "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
         book = books.find_one( \
-            # TODO: How can I use ObjectId(rid instead of regular rid)?
             {"reviews._id": ObjectId(rid)}, \
-            # { "reviews._id" : rid }, \
             {"_id": 0, "reviews.$": 1})
         if book is None:
             return make_response(jsonify({"error": "Invalid book ID or review ID"}), 404)
@@ -310,7 +308,6 @@ def edit_review(bid, rid):
         }
         books.update_one(
             {"reviews._id": ObjectId(rid)}, \
-            # { "reviews._id" : rid }, \
             {"$set": edited_review})
         edit_review_url = \
             "http://localhost:5000/api/v1.0/books/" + \
@@ -333,9 +330,7 @@ def delete_review(bid, rid):
         books.update_one(
             {"_id": ObjectId(bid)},
             {"$pull": {"reviews": \
-                       # TODO: How can I use ObjectId(rid instead of regular rid)?
                        {"_id": ObjectId(rid)}}})
-        # { "_id" : rid } } } )
         return make_response(jsonify({}), 204)
 
 
@@ -345,18 +340,10 @@ def login():
 
     if auth:
         user = users.find_one({"userName": auth.username})
-        print(user)
-        print(auth.password)
-        print(user["password"])
         if user is not None:
-            # result = bcrypt.checkpw(bytes(auth.password, "UTF-8"), user["password"])
-            # print("PASSWORD CHECK: ", result)
-            # TODO: fix password authentication
-            # if bcrypt.checkpw(bytes(auth.password, "UTF-8"), user["password"]):
-            if auth.password == 'password':
+            if bcrypt.checkpw(bytes(auth.password, "UTF-8"), user["password"]):
                 token = jwt.encode(
                     {'user': auth.username, \
-                        # 'userid' : user["_id"], \
                         'admin': user["isAdmin"], \
                         'exp': datetime.datetime.utcnow() + \
                         datetime.timedelta(minutes=30) \
