@@ -100,7 +100,7 @@ export class BookComponent {
         
         this.webService.putBook(this.editBookForm.value)
         .subscribe((response: any) => {
-            
+
             this.editBookForm.reset();
             this.book = this.webService.getBook(
                 this.route.snapshot.params.id

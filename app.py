@@ -155,7 +155,7 @@ def show_one_book(id):
 
 
 @app.route("/api/v1.0/books", methods=["POST"])
-@jwt_required
+# @jwt_required
 def add_book():
     if "title" in request.form and \
         "author" in request.form and \

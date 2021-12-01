@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { WebService } from './web.service';
 import { FormBuilder, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'books',
@@ -13,6 +14,7 @@ export class BooksComponent {
 
     constructor(
       public webService: WebService,
+      public route: ActivatedRoute,
       private formBuilder: FormBuilder,
       ) {}
 
@@ -20,7 +22,9 @@ export class BooksComponent {
       if (sessionStorage.page) {
         this.page = Number(sessionStorage.page)
       }
-      this.book_list = this.webService.getBooks(this.page);
+      this.book_list = this.webService.getBooksOnPage(this.page);
+
+      this.books = this.webService.getBooks();
 
       this.addBookForm = this.formBuilder.group({
         title: ['', Validators.required],
@@ -38,22 +42,24 @@ export class BooksComponent {
       if (this.page > 1) {
         this.page = this.page - 1;
         sessionStorage.page = this.page; 
-        this.book_list = this.webService.getBooks(this.page);
+        this.book_list = this.webService.getBooksOnPage(this.page);
       }
     }
 
     nextPage() {
       this.page = this.page + 1;
       sessionStorage.page = this.page; 
-      this.book_list = this.webService.getBooks(this.page);
+      this.book_list = this.webService.getBooksOnPage(this.page);
     }
 
     onBookAddSubmit() {
         
-      this.webService.putBook(this.addBookForm.value)
+      this.webService.postBook(this.addBookForm.value)
       .subscribe((response: any) => {
           
           this.addBookForm.reset();
+          console.log({response});
+          
           // this.book = this.webService.getBook(
           //     this.route.snapshot.params.id
           // );
@@ -64,4 +70,5 @@ export class BooksComponent {
 
     book_list: any = [];     // to avoid type checking errors
     page: number = 1;
+    books: any = [];
 }
