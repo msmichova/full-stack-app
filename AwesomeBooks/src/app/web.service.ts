@@ -24,22 +24,42 @@ export class WebService {
         );
     }
 
-    editBook(id: any) {
-        this.bookID = id;
-        // const headers = { 'Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar' };
+    postBook(book: any) {
+        console.log("Adding a book.....");
+        
+        const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
         
         let body = new FormData(); 
-        body.append("title", id.title);
-        body.append("author", id.author);
-        body.append("country", id.country);
-        body.append("imageLink", id.imageLink);
-        body.append("language", id.language);
-        body.append("link", id.link);
-        body.append("pages", id.pages);
-        body.append("year", id.year);
+        body.append("title", book.title);
+        body.append("author", book.author);
+        body.append("country", book.country);
+        body.append("imageLink", book.imageLink);
+        body.append("language", book.language);
+        body.append("link", book.link);
+        body.append("pages", book.pages);
+        body.append("year", book.year);
         
         return this.http.put(
-            'http://localhost:5000/api/v1.0/books/'+id, body
+            'http://localhost:5000/api/v1.0/books/', body
+        );
+    }
+
+    putBook(book: any) {
+        
+        const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+        
+        let body = new FormData(); 
+        body.append("title", book.title);
+        body.append("author", book.author);
+        body.append("country", book.country);
+        body.append("imageLink", book.imageLink);
+        body.append("language", book.language);
+        body.append("link", book.link);
+        body.append("pages", book.pages);
+        body.append("year", book.year);
+        
+        return this.http.put(
+            'http://localhost:5000/api/v1.0/books/'+this.bookID, body, {headers}
         );
     }
 

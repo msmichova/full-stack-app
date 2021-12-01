@@ -36,6 +36,17 @@ export class BookComponent {
             stars: 5
         })
 
+        this.editBookForm = this.formBuilder.group({
+            title: ['', Validators.required],
+            author: ['', Validators.required],
+            country: ['', Validators.required],
+            imageLink: ['', Validators.required],
+            language: ['', Validators.required],
+            link: ['', Validators.required],
+            pages: ['', Validators.required],
+            year: ['', Validators.required]
+        })
+
         this.book = this.webService.getBook(
             this.route.snapshot.params.id
         );
@@ -82,25 +93,21 @@ export class BookComponent {
                 console.log({response});
                 // location.reload();
                 window.location.replace("http://localhost:4200/books/");
-                
-                // this.reviewForm.reset();
-                // this.reviews = this.webService.getReviews(
-                //     this.route.snapshot.params.id
-                // );
             });    
     }
 
-    onBookEdit() {
-        this.editBookForm = this.formBuilder.group({
-            title: ['', Validators.required],
-            author: ['', Validators.required],
-            country: ['', Validators.required],
-            imageLink: ['', Validators.required],
-            language: ['', Validators.required],
-            link: ['', Validators.required],
-            pages: ['', Validators.required],
-            year: ['', Validators.required]
-        })
+    onBookEditSubmit() {
+        
+        this.webService.putBook(this.editBookForm.value)
+        .subscribe((response: any) => {
+            
+            this.editBookForm.reset();
+            this.book = this.webService.getBook(
+                this.route.snapshot.params.id
+            );
+        }); 
+        console.log('Submitted!');
+        
     }
 
     book: any = [];     // to avoid type checking errors

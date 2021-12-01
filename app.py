@@ -187,7 +187,7 @@ def add_book():
 
 
 @app.route("/api/v1.0/books/<string:id>", methods=["PUT"])
-@jwt_required
+# @jwt_required
 def edit_book(id):
     if "title" in request.form and \
         "author" in request.form and \
