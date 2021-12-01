@@ -12,6 +12,8 @@ import { BookComponent } from './book.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthModule } from '@auth0/auth0-angular';
 import { NavComponent } from './nav.component';
+import { ReviewComponent } from './review.component';
+import { PageNotFoundComponent } from './pageNotFound.component';
 
 var routes: any = [
   {
@@ -26,6 +28,14 @@ var routes: any = [
     path: 'books/:id',
     component: BookComponent
   },
+  {
+    path: 'books/:bid/reviews/:rid',
+    component: ReviewComponent
+  },
+  { 
+    path: '**', 
+    component: PageNotFoundComponent 
+  },
 ];
 
 @NgModule({
@@ -34,7 +44,9 @@ var routes: any = [
     BooksComponent,
     HomeComponent,
     BookComponent,
-    NavComponent
+    NavComponent,
+    ReviewComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

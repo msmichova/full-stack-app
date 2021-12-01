@@ -31,14 +31,7 @@ export class WebService {
     }
 
     postBook(book: any) {
-        console.log("Adding a book.....");
         
-        //const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
-        
-        // const headers = new HttpHeaders()
-        //     .set('Content-Type', 'application/x-www-form-urlencoded')
-        //     .set('Access-Control-Allow-Origin', '*');
-
         let bookData = new FormData(); 
         bookData.append("title", book.title);
         bookData.append("author", book.author);
@@ -83,12 +76,12 @@ export class WebService {
         );
     }
 
-    // getReview(bookID: any, reviewID: any) {
-    //     return this.http.get(
-    //         'http://localhost:5000/api/v1.0/books/' + 
-    //         bookID + '/reviews/' + reviewID
-    //     );
-    // }
+    getReview(bid: any, rid: any) {
+        return this.http.get(
+            'http://localhost:5000/api/v1.0/books/' + 
+            bid + '/reviews/' + rid
+        );
+    }
 
     postReview(review: any) {
         let postData = new FormData();
@@ -102,29 +95,37 @@ export class WebService {
         //                 today.getDate();
         // postData.append("date", todayDate)
 
-        // TODO: remove this
-        console.log("POST DATA: ");
-        console.log({postData});
-
         return this.http.post(
             'http://localhost:5000/api/v1.0/books/' +
             this.bookID + '/reviews', postData); 
 
     }
 
-    // TODO: Edit review
-    editReview(review: any) {}
+    // TODO: test this
+    putReview(review: any) {
+        let postData = new FormData();
+        postData.append("name", review.name);
+        postData.append("comment", review.review);
+        postData.append("stars", review.stars);
 
-    // deleteReview(bookID: any, reviewID: any) {
-        
-    //     this.bookID = bookID;
-    //     this.reviewID = reviewID;
-        
-    //     return this.http.delete(
-    //         'http://localhost:5000/api/v1.0/books/' +
-    //         bookID + '/reviews/' + reviewID); 
+        // let today = new Date();
+        // let todayDate = today.getFullYear() + "-" +
+        //                 today.getMonth() + "-" +
+        //                 today.getDate();
+        // postData.append("date", todayDate)
 
-    // }
+        return this.http.put(
+            'http://localhost:5000/api/v1.0/books/' +
+            this.bookID + '/reviews', postData); 
+
+    }
+
+    // TODO: test this
+    deleteReview(review: any) {     
+        return this.http.delete(
+            'http://localhost:5000/api/v1.0/books/' +
+            this.reviewID + '/reviews/' + this.bookID); 
+    }
 
 
 }

@@ -34,6 +34,7 @@ DONE:
 7. Fix review IDs on API routes
 8. Postman tokens + Testing
 11. !!!!!!! FIX LOGIN!!!! Login/authentication/protected routes 
+18. Book CRUD
 
 TODO: 
 5. Admin/user privileges - review_owner_required decorator or func? how to pass args? 
@@ -44,6 +45,7 @@ TODO:
 15. Docs - use markdown syntax 
 16. ADD DATE TO REVIEWS!!! 
 17. !!! enable jwt_required on add review, add hardcoded user!!!
+19. Review CRUD
 
 - Video submission (5min)
   - Highlight features that are extra compared to labs

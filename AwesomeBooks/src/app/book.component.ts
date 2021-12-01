@@ -59,6 +59,10 @@ export class BookComponent {
         //     this.book,
         //     this.route.snapshot.params.id
         // )
+        this.review = this.webService.getReview(
+            this.route.snapshot.params.bid,
+            this.route.snapshot.params.rid
+        )
     } 
     onSubmit() {
         // console.log(this.reviewForm.value);
@@ -110,8 +114,18 @@ export class BookComponent {
         
     }
 
+    onReviewDelete(){
+        this.webService.deleteReview(this.review)
+        .subscribe((response: any) => {
+            console.log({response});
+            location.reload();
+            // window.location.replace("http://localhost:4200/books/");
+        }); 
+
+    }
+
     book: any = [];     // to avoid type checking errors
     reviews: any = [];
-    // review: any = [];
+    review: any = [];
 }
 

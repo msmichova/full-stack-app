@@ -275,20 +275,23 @@ def fetch_all_reviews(id):
 
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["GET"])
 def fetch_one_review(bid, rid):
+    print(rid)
     if checkHex(str(bid)) == False:
-        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
+        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
     elif checkHex(str(rid)) == False:
-        return make_response(jsonify({"error": "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
+        return make_response( jsonify({"error" : "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
     else:
-        book = books.find_one( \
-            {"reviews._id": ObjectId(rid)}, \
-            {"_id": 0, "reviews.$": 1})
+        # Only works in Postman
+        # book = books.find_one( { "reviews._id" : ObjectId(rid) }, { "_id" : 0, "reviews.$" : 1 } )
+        # Only works in Angular
+        book = books.find_one( { "reviews._id" : rid }, { "_id" : 0, "reviews.$" : 1 } )
         if book is None:
-            return make_response(jsonify({"error": "Invalid book ID or review ID"}), 404)
-
+            return make_response( jsonify( {"error":"Invalid book ID or review ID"}),404)
+        
         book['reviews'][0]['_id'] = str(book['reviews'][0]['_id'])
 
-        return make_response(jsonify(book['reviews'][0]), 200)
+        return make_response( jsonify( book['reviews'][0]), 200)
+
 
 # EXTRA FEATURE: Checking that all fields are filled out
 
@@ -318,7 +321,7 @@ def edit_review(bid, rid):
 
 
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["DELETE"])
-@jwt_required
+# @jwt_required
 # @review_owner_required_with_args(bid, rid)
 # @admin_required
 def delete_review(bid, rid):
