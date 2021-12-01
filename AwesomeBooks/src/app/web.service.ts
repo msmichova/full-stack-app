@@ -24,7 +24,24 @@ export class WebService {
         );
     }
 
-    editBook() {}
+    editBook(id: any) {
+        this.bookID = id;
+        // const headers = { 'Authorization': 'Bearer my-token', 'My-Custom-Header': 'foobar' };
+        
+        let body = new FormData(); 
+        body.append("title", id.title);
+        body.append("author", id.author);
+        body.append("country", id.country);
+        body.append("imageLink", id.imageLink);
+        body.append("language", id.language);
+        body.append("link", id.link);
+        body.append("pages", id.pages);
+        body.append("year", id.year);
+        
+        return this.http.put(
+            'http://localhost:5000/api/v1.0/books/'+id, body
+        );
+    }
 
     deleteBook(id: any) {
         this.bookID = id;

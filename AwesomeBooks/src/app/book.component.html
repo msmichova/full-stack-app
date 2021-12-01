@@ -128,7 +128,35 @@
         </button>
     </div>
     <div class="modal-body">
-        ...
+        <form [formGroup]="editBookForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" 
+                    class="form-control" 
+                    formControlName="name"
+                    >
+            </div>
+            <div class="form-group">
+                <label for="review">Please leave your review below</label>
+                <textarea name="review" id="review" rows="3" 
+                    class="form-control"
+                    formControlName="review"
+                ></textarea>
+            </div>
+            <div class="form-group">
+                <label for="stars">Please provide a rating (5 = best)</label>
+                <select name="stars" id="stars" 
+                    class="form-control" formControlName="stars">
+                    <option value="1">1 star</option>
+                    <option value="2">2 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="5">5 stars</option>
+                </select>
+            </div>
+            <!-- <span *ngIf="isIncomplete()" class="error">You must complete all fields</span>
+            <button *ngIf="!isIncomplete()" type="submit" class="btn btn-primary">Submit</button> -->
+        </form>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

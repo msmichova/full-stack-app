@@ -12,6 +12,7 @@ import { AuthService } from '@auth0/auth0-angular';
 export class BookComponent {
 
     reviewForm: any;
+    editBookForm: any;
 
     constructor(
         public webService: WebService,
@@ -87,6 +88,19 @@ export class BookComponent {
                 //     this.route.snapshot.params.id
                 // );
             });    
+    }
+
+    onBookEdit() {
+        this.editBookForm = this.formBuilder.group({
+            title: ['', Validators.required],
+            author: ['', Validators.required],
+            country: ['', Validators.required],
+            imageLink: ['', Validators.required],
+            language: ['', Validators.required],
+            link: ['', Validators.required],
+            pages: ['', Validators.required],
+            year: ['', Validators.required]
+        })
     }
 
     book: any = [];     // to avoid type checking errors
