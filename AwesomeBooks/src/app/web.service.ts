@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable()
@@ -51,33 +51,22 @@ export class WebService {
 
         return this.http.post(
             'http://localhost:5000/api/v1.0/books', bookData); 
-        
-        // return this.http.put(
-        //     'http://localhost:5000/api/v1.0/books', body
-        //     // , {headers}
-        // );
     }
 
     putBook(book: any) {
+          
+        let bookData = new FormData(); 
+        bookData.append("title", book.title);
+        bookData.append("author", book.author);
+        bookData.append("country", book.country);
+        bookData.append("imageLink", book.imageLink);
+        bookData.append("language", book.language);
+        bookData.append("link", book.link);
+        bookData.append("pages", book.pages);
+        bookData.append("year", book.year);
         
-        //const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
-        
-        let body = new FormData(); 
-        body.append("title", book.title);
-        body.append("author", book.author);
-        body.append("country", book.country);
-        body.append("imageLink", book.imageLink);
-        body.append("language", book.language);
-        body.append("link", book.link);
-        body.append("pages", book.pages);
-        body.append("year", book.year);
-        
-        
-
         return this.http.put(
-            'http://localhost:5000/api/v1.0/books/'+this.bookID, body
-            //, {headers}
-        );
+            'http://localhost:5000/api/v1.0/books/' + this.bookID, bookData); 
     }
 
     deleteBook(id: any) {
