@@ -297,7 +297,7 @@ def fetch_one_review(bid, rid):
 
 
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["PUT"])
-@jwt_required
+# @jwt_required
 def edit_review(bid, rid):
     if checkHex(str(bid)) == False:
         return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)

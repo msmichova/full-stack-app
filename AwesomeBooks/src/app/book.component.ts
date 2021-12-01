@@ -13,6 +13,7 @@ export class BookComponent {
 
     reviewForm: any;
     editBookForm: any;
+    editReviewForm: any;
 
     constructor(
         public webService: WebService,
@@ -31,6 +32,12 @@ export class BookComponent {
     ngOnInit() {
 
         this.reviewForm = this.formBuilder.group({
+            name: ['', Validators.required],
+            review: ['', Validators.required],
+            stars: 5
+        })
+
+        this.editReviewForm = this.formBuilder.group({
             name: ['', Validators.required],
             review: ['', Validators.required],
             stars: 5
@@ -112,6 +119,16 @@ export class BookComponent {
         }); 
         console.log('Submitted!');
         
+    }
+
+    onReviewEditSubmit(){
+        this.webService.putReview(this.editReviewForm.value)
+            .subscribe((response: any) => {
+                this.editReviewForm.reset();
+                this.reviews = this.webService.getReviews(
+                    this.route.snapshot.params.id
+                );
+            });      
     }
 
     onReviewDelete(){

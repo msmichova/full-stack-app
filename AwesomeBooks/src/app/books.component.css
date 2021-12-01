@@ -16,3 +16,11 @@
 .button-pagination:hover {
     background-color: #a4133c;
 }
+
+.card-body{
+    display: flex;
+}
+
+img {
+    padding-right: 15px;
+}

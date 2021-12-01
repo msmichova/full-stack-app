@@ -27,6 +27,7 @@
                         </div>
                     </div>
                     <div class="card-body">
+                        <img src="https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/{{book.imageLink}}" height="200"/>
                         <p class="card-text">Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.</p>
                     </div>
                     <div class="card-footer">
@@ -44,8 +45,8 @@
             <div *ngFor="let book of book | async">
                 <div *ngFor="let review of reviews | async">
                     <div class="card bg-light mb-3"
-                    [routerLink]="['/books', book._id, 'reviews', review._id]"
                     style="width: 40rem; margin: auto;">
+                    <!-- [routerLink]="['/books', book._id, 'reviews', review._id]" -->
                         <div class="card-header bg-secondary text-white">
                             Review by 
                             {{review.name}}
@@ -54,7 +55,7 @@
                         <div class="card-body">
                             <p class="comment">{{review.comment}}</p>
                             <div>
-                                <button class="btn btn-secondary edit-button">
+                                <button class="btn btn-secondary edit-button" data-toggle="modal" data-target="#editReviewModal">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                                         <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
                                     </svg>
@@ -121,7 +122,7 @@
 </div>          
 
 
-<!-- Modal -->
+<!-- Edit Book Modal -->
 <div class="modal fade" id="editBookModal" tabindex="-1" role="dialog" aria-labelledby="editBookModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -195,6 +196,57 @@
     </div>
 </div>
 </div>
+
+<!-- Edit Review Modal -->
+
+<div class="modal fade" id="editReviewModal" tabindex="-1" role="dialog" aria-labelledby="editReviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="editReviewModalLabel">Edit book</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="editReviewForm" (ngSubmit)="onReviewEditSubmit()">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" 
+                        class="form-control" 
+                        formControlName="name"
+                        [ngClass]="{ 'error' : isInvalid('name')}">
+                </div>
+                <div class="form-group">
+                    <label for="review">Please leave your review below</label>
+                    <textarea name="review" id="review" rows="3" 
+                        class="form-control"
+                        formControlName="review"
+                        [ngClass]="{ 'error' : isInvalid('review')}"
+                    ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="stars">Please provide a rating (5 = best)</label>
+                    <select name="stars" id="stars" 
+                        class="form-control" formControlName="stars">
+                        <option value="1">1 star</option>
+                        <option value="2">2 stars</option>
+                        <option value="3">3 stars</option>
+                        <option value="4">4 stars</option>
+                        <option value="5">5 stars</option>
+                    </select>
+                </div>
+                <!-- <span *ngIf="isIncomplete()" class="error">You must complete all fields</span>
+                <button *ngIf="!isIncomplete()" type="submit" class="btn btn-primary">Submit</button> -->
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+
 
 <!-- Modal Script -->
 <!-- <script>
