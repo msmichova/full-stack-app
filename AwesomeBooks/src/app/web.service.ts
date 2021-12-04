@@ -9,9 +9,11 @@ export class WebService {
     
     book_list: any;
     single_review: any;
-
+    page_size: number = 9;
+    
     constructor(private http: HttpClient) {}
-
+    
+    
     getSortedBooks(order: any) {
         return this.http.get(
             'http://localhost:5000/api/v1.0/books?sort_by=' + order
@@ -20,7 +22,8 @@ export class WebService {
 
     getBooksOnPage(page: number, order: string) {
         return this.http.get(
-            'http://localhost:5000/api/v1.0/books?pn=' + page + 
+            'http://localhost:5000/api/v1.0/books?pn=' + page +
+            '&ps=' + this.page_size + 
             '&sort_by=' + order
         );
     }
