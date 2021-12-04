@@ -8,6 +8,7 @@ export class WebService {
     private reviewID: any;
     
     book_list: any;
+    single_review: any;
 
     constructor(private http: HttpClient) {}
 
@@ -79,12 +80,18 @@ export class WebService {
     getReview(bid: any, rid: any) {
         console.log({bid});
         console.log({rid});
+        this.bookID = bid;
+        this.reviewID = rid;
         
         
         return this.http.get(
             'http://localhost:5000/api/v1.0/books/' + 
             bid + '/reviews/' + rid
-        );
+        )
+        // .subscribe( (response: any) => {
+        //     this.single_review = response;
+        // } )
+        ;
     }
 
     postReview(review: any) {

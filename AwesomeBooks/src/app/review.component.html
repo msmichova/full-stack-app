@@ -49,6 +49,7 @@
 <p style="margin-top:100px;">Review here!</p>
 
 <div *ngFor="let review of review | async">
+    <!-- <p>{{review}}</p> -->
     <div class="card bg-light mb-3"
     [routerLink]="['/books', book._id, 'reviews', review._id]"
     style="width: 40rem; margin: auto;">
@@ -69,7 +70,7 @@
 
 <!-- Edit Review Modal -->
 
-<div class="modal fade" id="editReviewModal" tabindex="-1" role="dialog" aria-labelledby="editReviewModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="editReviewModal" tabindex="-1" role="dialog" aria-labelledby="editReviewModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header">
@@ -104,12 +105,16 @@
                         <option value="5">5 stars</option>
                     </select>
                 </div>
-                <!-- <span *ngIf="isIncomplete()" class="error">You must complete all fields</span>
-                <button *ngIf="!isIncomplete()" type="submit" class="btn btn-primary">Submit</button> -->
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary">Save changes</button>
-
+                
             </form>
         </div>
     </div>
-</div>
+</div> -->
+
+
+
+
+<!-- <span *ngIf="isIncomplete()" class="error">You must complete all fields</span>
+<button *ngIf="!isIncomplete()" type="submit" class="btn btn-primary">Submit</button> -->

@@ -276,8 +276,8 @@ def fetch_all_reviews(id):
 # to bid and rid need to be specified as strings in url?
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["GET"])
 def fetch_one_review(bid, rid):
-    print(bid, type(bid))
-    print(rid, type(rid))
+    # print(bid, type(bid))
+    # print(rid, type(rid))
     if checkHex(str(bid)) == False:
         return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
     elif checkHex(str(rid)) == False:
@@ -293,7 +293,8 @@ def fetch_one_review(bid, rid):
         
         book['reviews'][0]['_id'] = str(book['reviews'][0]['_id'])
 
-        return make_response( jsonify( book['reviews'][0]), 200)
+        # IMPORTANT: returning an array containing a single review
+        return make_response( jsonify( [book['reviews'][0]] ), 200)
 
 
 # EXTRA FEATURE: Checking that all fields are filled out
