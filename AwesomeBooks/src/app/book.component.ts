@@ -54,6 +54,8 @@ export class BookComponent {
             year: ['', Validators.required]
         })
 
+        this.books = this.webService.getBooks();
+
         this.book = this.webService.getBook(
             this.route.snapshot.params.id
         );
@@ -137,7 +139,8 @@ export class BookComponent {
 
     // }
 
-    book: any = [];     // to avoid type checking errors
+    books: any = [];
+    book: any = [];
     reviews: any = [];
     review: any = [];
 }

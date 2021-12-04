@@ -1,11 +1,28 @@
 <!-- TODO: create a grid layout? This one does not work -->
 <div class="container" style="margin-top:70px;">
     <div class="row">
-        <div class="col-sm-12">
-            <div *ngFor="let book of book_list | async">
+        <div class="col-sm-12 text-center">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sort by
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button" (click)="onSortByClicked('author_asc')">Author Asc</button>
+                  <button class="dropdown-item" type="button" (click)="onSortByClicked('author_desc')">Author Desc</button>
+                  <button class="dropdown-item" type="button" (click)="onSortByClicked('title_asc')">Title Asc</button>
+                  <button class="dropdown-item" type="button" (click)="onSortByClicked('title_desc')">Title Desc</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<div class="container" >
+    <div class="row row-cols-auto" style="justify-content: center;">
+        <div *ngFor="let book of book_list | async">
+        <div class="col-md">
                 <div class="card mb-3"                
                     [routerLink]="['/books', book._id]"
-                    style="width: 40rem; margin: auto; display: flex; cursor: pointer;">
+                    style="width: 25rem;  display: flex; cursor: pointer;">
                     <div class="card-header">
                         <div>
                             <h2 class="card-title">{{book.title}}</h2>
@@ -15,7 +32,7 @@
                     </div>
                     <div class="card-body">
                         <img src="https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/{{book.imageLink}}" height="200"/>
-                        <p class="card-text">Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.</p>
+                        <!-- <p class="card-text">Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.</p> -->
                     </div>
                     <div class="card-footer">
                         <a href="https://loremipsum.io/ultimate-list-of-lorem-ipsum-generators/">-> Hipster Ipsum source</a>
@@ -24,7 +41,8 @@
             </div>
         </div>  <!-- col -->
     </div>      <!-- row -->
-
+</div>
+<div class="container">
     <div class="row">
         <div class="col-sm-6">
             <button class="btn button-pagination"

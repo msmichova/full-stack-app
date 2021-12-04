@@ -12,9 +12,16 @@ export class WebService {
 
     constructor(private http: HttpClient) {}
 
-    getBooksOnPage(page: number) {
+    getSortedBooks(order: any) {
         return this.http.get(
-            'http://localhost:5000/api/v1.0/books?pn=' + page
+            'http://localhost:5000/api/v1.0/books?sort_by=' + order
+        );
+    }
+
+    getBooksOnPage(page: number, order: string) {
+        return this.http.get(
+            'http://localhost:5000/api/v1.0/books?pn=' + page + 
+            '&sort_by=' + order
         );
     }
 
@@ -132,10 +139,14 @@ export class WebService {
     }
 
     // TODO: test this
-    deleteReview(rid: any) {     
+    deleteReview(bid: any, rid: any) {   
+        this.bookID = bid;
+        this.reviewID = rid;
+                
         return this.http.delete(
-            'http://localhost:5000/api/v1.0/books/' +
-            this.bookID + '/reviews/' + rid); 
+            'http://localhost:5000/api/v1.0/books/' + 
+            bid + '/reviews/' + rid
+        );
     }
 
 

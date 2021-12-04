@@ -20,11 +20,16 @@ export class BooksComponent {
       public authService: AuthService,
       ) {}
 
-    ngOnInit() {    // fired automatically whenever an object has been created
+    ngOnInit() {
       if (sessionStorage.page) {
         this.page = Number(sessionStorage.page)
       }
-      this.book_list = this.webService.getBooksOnPage(this.page);
+
+      if (sessionStorage.order) {
+        this.order = String(sessionStorage.order)
+      }
+
+      this.book_list = this.webService.getBooksOnPage(this.page, this.order);
 
       this.books = this.webService.getBooks();
 
@@ -44,33 +49,37 @@ export class BooksComponent {
       if (this.page > 1) {
         this.page = this.page - 1;
         sessionStorage.page = this.page; 
-        this.book_list = this.webService.getBooksOnPage(this.page);
+        this.book_list = this.webService.getBooksOnPage(this.page, this.order);
       }
     }
 
     nextPage() {
       this.page = this.page + 1;
       sessionStorage.page = this.page; 
-      this.book_list = this.webService.getBooksOnPage(this.page);
+      this.book_list = this.webService.getBooksOnPage(this.page, this.order);
     }
 
     onBookAddSubmit() {
         
       this.webService.postBook(this.addBookForm.value)
-      .subscribe((response: any) => {
-          
+      .subscribe((response: any) => {        
           this.addBookForm.reset();
-          console.log({response});
-          
-          // this.book = this.webService.getBook(
-          //     this.route.snapshot.params.id
-          // );
       }); 
-      console.log('Submitted!');
-      
+      console.log('Submitted!');   
+  }
+
+  onSortByClicked(order: any) {
+    this.order = order;
+    sessionStorage.order = this.order;
+    sessionStorage.page = 1; // return to first page
+    this.books = this.webService.getSortedBooks(this.order)
+    .subscribe((response: any) => {
+      location.reload();
+    });   
   }
 
     book_list: any = [];     // to avoid type checking errors
     page: number = 1;
+    order: string = 'author_desc';
     books: any = [];
 }

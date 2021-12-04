@@ -28,6 +28,8 @@ export class ReviewComponent {
             stars: 5
         })
 
+        this.books = this.webService.getBooks();
+
         this.book = this.webService.getBook(
             this.route.snapshot.params.bid
         );
@@ -58,17 +60,20 @@ export class ReviewComponent {
     }
 
     onReviewDelete(){
-        this.webService.deleteReview(this.route.snapshot.params.rid)
+        this.webService.deleteReview(
+            this.route.snapshot.params.bid,
+            this.route.snapshot.params.rid
+        )
         .subscribe((response: any) => {
             console.log({response});
-            location.reload();
-            // window.location.replace("http://localhost:4200/books/");
+            // location.reload();
+            // window.location.replace("http://localhost:4200/books/" + this.route.snapshot.params.bid);
         }); 
     }
 
     
-
-    book: any = [];     // to avoid type checking errors
+    books: any = [];
+    book: any = [];
     reviews: any = [];
     review: any = [];
 }

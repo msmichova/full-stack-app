@@ -335,9 +335,10 @@ def delete_review(bid, rid):
         return make_response(jsonify({"error": "Invalid review ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
         books.update_one(
-            {"_id": ObjectId(bid)},
+            {"_id": ObjectId(bid)}, \
             {"$pull": {"reviews": \
-                       {"_id": ObjectId(rid)}}})
+            {"_id": ObjectId(rid)} } } )
+        print(books.find_one({"_id": ObjectId(bid)}))
         return make_response(jsonify({}), 204)
 
 
