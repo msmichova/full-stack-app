@@ -273,18 +273,21 @@ def fetch_all_reviews(id):
         return make_response(jsonify(data_to_return), 200)
 
 
+# to bid and rid need to be specified as strings in url?
 @app.route("/api/v1.0/books/<bid>/reviews/<rid>", methods=["GET"])
 def fetch_one_review(bid, rid):
-    print(rid)
+    print(bid, type(bid))
+    print(rid, type(rid))
     if checkHex(str(bid)) == False:
         return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
     elif checkHex(str(rid)) == False:
         return make_response( jsonify({"error" : "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
     else:
+
         # Only works in Postman
-        book = books.find_one( { "reviews._id" : ObjectId(rid) }, { "_id" : 0, "reviews.$" : 1 } )
-        # Only works in Angular
-        # book = books.find_one( { "reviews._id" : rid }, { "_id" : 0, "reviews.$" : 1 } )
+        # book = books.find_one( { "reviews._id" : ObjectId(rid) }, { "_id" : 0, "reviews.$" : 1 } )
+        # Only works in http://localhost:5000/
+        book = books.find_one( { "reviews._id" : rid }, { "_id" : 0, "reviews.$" : 1 } )
         if book is None:
             return make_response( jsonify( {"error":"Invalid book ID or review ID"}),404)
         

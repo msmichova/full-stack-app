@@ -77,6 +77,10 @@ export class WebService {
     }
 
     getReview(bid: any, rid: any) {
+        console.log({bid});
+        console.log({rid});
+        
+        
         return this.http.get(
             'http://localhost:5000/api/v1.0/books/' + 
             bid + '/reviews/' + rid
@@ -121,10 +125,10 @@ export class WebService {
     }
 
     // TODO: test this
-    deleteReview(review: any) {     
+    deleteReview(rid: any) {     
         return this.http.delete(
             'http://localhost:5000/api/v1.0/books/' +
-            this.reviewID + '/reviews/' + this.bookID); 
+            this.bookID + '/reviews/' + rid); 
     }
 
 

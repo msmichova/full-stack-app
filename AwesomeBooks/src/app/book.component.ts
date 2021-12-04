@@ -63,13 +63,9 @@ export class BookComponent {
         )
 
         // this.review = this.webService.getReview(
-        //     this.book,
-        //     this.route.snapshot.params.id
+        //     this.route.snapshot.params.bid,
+        //     this.route.snapshot.params.rid
         // )
-        this.review = this.webService.getReview(
-            this.route.snapshot.params.bid,
-            this.route.snapshot.params.rid
-        )
     } 
     onSubmit() {
         // console.log(this.reviewForm.value);
@@ -121,25 +117,25 @@ export class BookComponent {
         
     }
 
-    onReviewEditSubmit(){
-        this.webService.putReview(this.editReviewForm.value)
-            .subscribe((response: any) => {
-                this.editReviewForm.reset();
-                this.reviews = this.webService.getReviews(
-                    this.route.snapshot.params.id
-                );
-            });      
-    }
+    // onReviewEditSubmit(){
+    //     this.webService.putReview(this.editReviewForm.value)
+    //         .subscribe((response: any) => {
+    //             this.editReviewForm.reset();
+    //             this.reviews = this.webService.getReviews(
+    //                 this.route.snapshot.params.id
+    //             );
+    //         });      
+    // }
 
-    onReviewDelete(){
-        this.webService.deleteReview(this.review)
-        .subscribe((response: any) => {
-            console.log({response});
-            location.reload();
-            // window.location.replace("http://localhost:4200/books/");
-        }); 
+    // onReviewDelete(){
+    //     this.webService.deleteReview(this.review)
+    //     .subscribe((response: any) => {
+    //         console.log({response});
+    //         location.reload();
+    //         // window.location.replace("http://localhost:4200/books/");
+    //     }); 
 
-    }
+    // }
 
     book: any = [];     // to avoid type checking errors
     reviews: any = [];
