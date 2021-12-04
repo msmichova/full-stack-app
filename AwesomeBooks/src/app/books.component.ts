@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { WebService } from './web.service';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'books',
@@ -16,6 +17,7 @@ export class BooksComponent {
       public webService: WebService,
       public route: ActivatedRoute,
       private formBuilder: FormBuilder,
+      public authService: AuthService,
       ) {}
 
     ngOnInit() {    // fired automatically whenever an object has been created

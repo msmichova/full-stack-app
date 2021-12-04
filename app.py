@@ -282,9 +282,9 @@ def fetch_one_review(bid, rid):
         return make_response( jsonify({"error" : "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
     else:
         # Only works in Postman
-        # book = books.find_one( { "reviews._id" : ObjectId(rid) }, { "_id" : 0, "reviews.$" : 1 } )
+        book = books.find_one( { "reviews._id" : ObjectId(rid) }, { "_id" : 0, "reviews.$" : 1 } )
         # Only works in Angular
-        book = books.find_one( { "reviews._id" : rid }, { "_id" : 0, "reviews.$" : 1 } )
+        # book = books.find_one( { "reviews._id" : rid }, { "_id" : 0, "reviews.$" : 1 } )
         if book is None:
             return make_response( jsonify( {"error":"Invalid book ID or review ID"}),404)
         
