@@ -57,20 +57,23 @@ def create_database():
     # Create books collection
     books = db.books    
     with open('sample_books.json') as fin_books:
-        fin_reviews = open("reviews.json", "r")
-        reviews_list = json.load(fin_reviews)
+        # fin_reviews = open("reviews.json", "r")
+        # reviews_list = json.load(fin_reviews)
         books_list = json.load(fin_books)
 
         for book in books_list:
             no_of_reviews = random.randint(0, 5)
-            reviews = []
+            reviews_list = []
 
-            i = 0
-            while i < no_of_reviews:
-                random_review = reviews_list[random.randint(0, len(reviews_list)-1)]
-                reviews.append(random_review)
-                reviews_list.remove(random_review)
-                i += 1
+            for review in reviews.aggregate( [{ "$sample" : { "size": no_of_reviews } } ] ):
+                reviews_list.append(review)
+
+            # i = 0
+            # while i < no_of_reviews:
+            #     random_review = reviews_list[random.randint(0, len(reviews_list)-1)]
+            #     reviews.append(random_review)
+            #     reviews_list.remove(random_review)
+            #     i += 1
 
             modified_book = { \
                 "author" : book["author"], \
@@ -81,12 +84,12 @@ def create_database():
                 "pages" : book["pages"], \
                 "title" : book["title"], \
                 "year" : book["year"], \
-                "reviews" : reviews \
+                "reviews" : reviews_list \
             }
 
             books.insert_one(modified_book)
 
-        fin_reviews.close()
+        # fin_reviews.close()
     print("Books loaded")
 
 # Run all functions

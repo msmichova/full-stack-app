@@ -93,6 +93,7 @@ export class WebService {
         this.bookID = bid;
         this.reviewID = rid;
         
+        console.log({bid}, {rid});
         
         return this.http.get(
             'http://localhost:5000/api/v1.0/books/' + 
