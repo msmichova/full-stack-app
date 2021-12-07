@@ -138,7 +138,7 @@ export class WebService {
 
         return this.http.put(
             'http://localhost:5000/api/v1.0/books/' +
-            this.bookID + '/reviews', postData); 
+            this.bookID + '/reviews/' + this.reviewID, postData); 
 
     }
 
