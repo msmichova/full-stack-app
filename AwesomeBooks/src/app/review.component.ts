@@ -60,6 +60,8 @@ export class ReviewComponent {
     }
 
     onReviewDelete(){
+        this.book = this.route.snapshot.params.bid;
+        
         this.webService.deleteReview(
             this.route.snapshot.params.bid,
             this.route.snapshot.params.rid
@@ -67,7 +69,7 @@ export class ReviewComponent {
         .subscribe((response: any) => {
             console.log({response});
             // location.reload();
-            // window.location.replace("http://localhost:4200/books/" + this.route.snapshot.params.bid);
+            window.location.replace("http://localhost:4200/books/" + this.book);
         }); 
     }
 
