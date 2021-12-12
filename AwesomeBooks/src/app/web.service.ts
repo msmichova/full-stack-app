@@ -98,11 +98,7 @@ export class WebService {
         return this.http.get(
             'http://localhost:5000/api/v1.0/books/' + 
             bid + '/reviews/' + rid
-        )
-        // .subscribe( (response: any) => {
-        //     this.single_review = response;
-        // } )
-        ;
+        );
     }
 
     postReview(review: any) {
@@ -110,39 +106,24 @@ export class WebService {
         postData.append("name", review.name);
         postData.append("comment", review.review);
         postData.append("stars", review.stars);
-
-        // let today = new Date();
-        // let todayDate = today.getFullYear() + "-" +
-        //                 today.getMonth() + "-" +
-        //                 today.getDate();
-        // postData.append("date", todayDate)
-
+        
         return this.http.post(
             'http://localhost:5000/api/v1.0/books/' +
             this.bookID + '/reviews', postData); 
-
     }
 
-    // TODO: test this
+
     putReview(review: any) {
         let postData = new FormData();
         postData.append("name", review.name);
         postData.append("comment", review.review);
         postData.append("stars", review.stars);
 
-        // let today = new Date();
-        // let todayDate = today.getFullYear() + "-" +
-        //                 today.getMonth() + "-" +
-        //                 today.getDate();
-        // postData.append("date", todayDate)
-
         return this.http.put(
             'http://localhost:5000/api/v1.0/books/' +
             this.bookID + '/reviews/' + this.reviewID, postData); 
-
     }
 
-    // TODO: test this
     deleteReview(bid: any, rid: any) {   
         this.bookID = bid;
         this.reviewID = rid;
@@ -152,6 +133,4 @@ export class WebService {
             bid + '/reviews/' + rid
         );
     }
-
-
 }
