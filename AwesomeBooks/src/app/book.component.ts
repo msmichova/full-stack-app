@@ -28,13 +28,13 @@ export class BookComponent {
             name: ['', Validators.required],
             review: ['', Validators.required],
             stars: 5
-        })
+        });
 
         this.editReviewForm = this.formBuilder.group({
             name: ['', Validators.required],
             review: ['', Validators.required],
             stars: 5
-        })
+        });
 
         this.editBookForm = this.formBuilder.group({
             title: ['', Validators.required],
@@ -45,7 +45,7 @@ export class BookComponent {
             link: ['', Validators.required],
             pages: ['', Validators.required],
             year: ['', Validators.required]
-        })
+        });
 
         this.books = this.webService.getBooks();
 
@@ -55,11 +55,7 @@ export class BookComponent {
 
         this.reviews = this.webService.getReviews(
             this.route.snapshot.params.id
-        )
-
-       this.noOfReviews = this.reviews.forEach(() => {
-        this.noOfReviews = this.noOfReviews + 1;
-    });
+        );
 
     } 
     onSubmit() {

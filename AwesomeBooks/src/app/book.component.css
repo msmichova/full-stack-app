@@ -12,11 +12,6 @@
   font-size: 1.2rem;
 }
 
-.card-body {
-  display: flex;
-  justify-content: center;
-}
-
 .edit-button {
   align-items: baseline;
 }
