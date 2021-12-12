@@ -1,27 +1,31 @@
+.error {
+  background-color: #ff8a8a;
+}
+
 .card-header {
-    background-color: #f5cac3;
-    display: flex;
-    justify-content: space-between;
+  background-color: #f5cac3;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-subtitle {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .button-pagination {
-    background-color: #c9184a;
-    color: #ffffff; 
+  background-color: #c9184a;
+  color: #ffffff;
 }
 
 .button-pagination:hover {
-    background-color: #a4133c;
+  background-color: #a4133c;
 }
 
-.card-body{
-    display: flex;
-    justify-content: center;
+.card-body {
+  display: flex;
+  justify-content: center;
 }
 
 img {
-    padding-right: 15px;
+  padding-right: 15px;
 }

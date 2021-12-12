@@ -107,6 +107,35 @@ export class BookComponent {
         
     }
 
+    isBookInvalid(control: any) {
+        return  this.editBookForm.controls[control].invalid &&
+                this.editBookForm.controls[control].touched;
+    }
+
+    isBookUntouched() {
+        return  this.editBookForm.controls.title.pristine &&
+                this.editBookForm.controls.author.pristine &&
+                this.editBookForm.controls.country.pristine &&
+                this.editBookForm.controls.imageLink.pristine &&
+                this.editBookForm.controls.language.pristine &&
+                this.editBookForm.controls.link.pristine &&
+                this.editBookForm.controls.pages.pristine &&
+                this.editBookForm.controls.year.pristine;
+    }
+
+    isBookIncomplete() {
+        return  this.isBookInvalid('title') ||
+                this.isBookInvalid('author') ||
+                this.isBookInvalid('country') ||
+                this.isBookInvalid('imageLink') ||
+                this.isBookInvalid('language') ||
+                this.isBookInvalid('link') ||
+                this.isBookInvalid('pages') ||
+                this.isBookInvalid('year') ||
+                this.isBookUntouched(); 
+    }
+
+
     books: any = [];
     book: any = [];
     reviews: any = [];

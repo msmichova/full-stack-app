@@ -68,6 +68,34 @@ export class BooksComponent {
       }); 
   }
 
+  isBookInvalid(control: any) {
+    return  this.addBookForm.controls[control].invalid &&
+            this.addBookForm.controls[control].touched;
+}
+
+isBookUntouched() {
+    return  this.addBookForm.controls.title.pristine &&
+            this.addBookForm.controls.author.pristine &&
+            this.addBookForm.controls.country.pristine &&
+            this.addBookForm.controls.imageLink.pristine &&
+            this.addBookForm.controls.language.pristine &&
+            this.addBookForm.controls.link.pristine &&
+            this.addBookForm.controls.pages.pristine &&
+            this.addBookForm.controls.year.pristine;
+}
+
+isBookIncomplete() {
+    return  this.isBookInvalid('title') ||
+            this.isBookInvalid('author') ||
+            this.isBookInvalid('country') ||
+            this.isBookInvalid('imageLink') ||
+            this.isBookInvalid('language') ||
+            this.isBookInvalid('link') ||
+            this.isBookInvalid('pages') ||
+            this.isBookInvalid('year') ||
+            this.isBookUntouched(); 
+}
+
   onSortByClicked(order: any) {
     this.order = order;
     sessionStorage.order = this.order;

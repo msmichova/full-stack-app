@@ -44,6 +44,22 @@ export class ReviewComponent {
         );
     } 
 
+    isInvalid(control: any) {
+        return  this.editReviewForm.controls[control].invalid &&
+                this.editReviewForm.controls[control].touched;
+    }
+
+    isUntouched() {
+        return  this.editReviewForm.controls.name.pristine &&
+                this.editReviewForm.controls.review.pristine;
+    }
+
+    isIncomplete() {
+        return  this.isInvalid('name') ||
+                this.isInvalid('review') ||
+                this.isUntouched(); 
+    }
+
     onReviewEditSubmit(){
     this.webService.putReview(this.editReviewForm.value)
         .subscribe((response: any) => {
