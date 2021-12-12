@@ -1,0 +1,3501 @@
+[{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81af9"
+	},
+	"author": "Chinua Achebe",
+	"country": "Nigeria",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/things-fall-apart.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Things_Fall_Apart",
+	"pages": 209,
+	"title": "Things Fall Apart",
+	"year": 1958,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aac"
+			},
+			"name": "camilleblack",
+			"stars": 1,
+			"comment": "It only works when I'm Nepal."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81afa"
+	},
+	"author": "Hans Christian Andersen",
+	"country": "Denmark",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/fairy-tales.jpg",
+	"language": "Danish",
+	"link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.",
+	"pages": 784,
+	"title": "Fairy tales",
+	"year": 1836,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81afb"
+	},
+	"author": "Dante Alighieri",
+	"country": "Italy",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-divine-comedy.jpg",
+	"language": "Italian",
+	"link": "https://en.wikipedia.org/wiki/Divine_Comedy",
+	"pages": 928,
+	"title": "The Divine Comedy",
+	"year": 1315,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a7e"
+			},
+			"name": "hayleebrady",
+			"stars": 1,
+			"comment": "this read is mellow."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81acf"
+			},
+			"name": "justinsimmons",
+			"stars": 1,
+			"comment": "i use it never again when i'm in my station."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aa8"
+			},
+			"name": "brianahartman",
+			"stars": 1,
+			"comment": "My neighbor Ardeth has one of these. She works as a gasman and she says it looks fuzzy."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81936"
+			},
+			"name": "katiemendez",
+			"stars": 3,
+			"comment": "talk about interest!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81afc"
+	},
+	"author": "Unknown",
+	"country": "Sumer and Akkadian Empire",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-epic-of-gilgamesh.jpg",
+	"language": "Akkadian",
+	"link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh",
+	"pages": 160,
+	"title": "The Epic Of Gilgamesh",
+	"year": -1700,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a2a"
+			},
+			"name": "paulchang",
+			"stars": 1,
+			"comment": "I tried to annihilate it but got bonbon all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a98"
+			},
+			"name": "justinsimmons",
+			"stars": 4,
+			"comment": "The box this comes in is 5 yard by 6 centimeter and weights 12 kilogram."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a8a"
+			},
+			"name": "emilioreynolds",
+			"stars": 4,
+			"comment": "talk about contempt!!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81afd"
+	},
+	"author": "Unknown",
+	"country": "Achaemenid Empire",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-book-of-job.jpg",
+	"language": "Hebrew",
+	"link": "https://en.wikipedia.org/wiki/Book_of_Job",
+	"pages": 176,
+	"title": "The Book Of Job",
+	"year": -600,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81996"
+			},
+			"name": "blakecruz",
+			"stars": 5,
+			"comment": "My bass loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81afe"
+	},
+	"author": "Unknown",
+	"country": "India/Iran/Iraq/Egypt/Tajikistan",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/one-thousand-and-one-nights.jpg",
+	"language": "Arabic",
+	"link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights",
+	"pages": 288,
+	"title": "One Thousand and One Nights",
+	"year": 1200,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ab3"
+			},
+			"name": "destinyhudson",
+			"stars": 3,
+			"comment": "one of my hobbies is skateboarding. and when i'm skateboarding this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ac8"
+			},
+			"name": "leticiaharrison",
+			"stars": 4,
+			"comment": "The box this comes in is 4 light-year by 5 inch and weights 11 megaton!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819d0"
+			},
+			"name": "justinsimmons",
+			"stars": 3,
+			"comment": "This book works quite well. It pointedly improves my golf by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a14"
+			},
+			"name": "derrickcoleman",
+			"stars": 1,
+			"comment": "this read is honest."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81aff"
+	},
+	"author": "Unknown",
+	"country": "Iceland",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/njals-saga.jpg",
+	"language": "Old Norse",
+	"link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga",
+	"pages": 384,
+	"title": "Njál's Saga",
+	"year": 1350,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af5"
+			},
+			"name": "destinyhudson",
+			"stars": 1,
+			"comment": "The box this comes in is 5 light-year by 6 foot and weights 17 megaton!!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b00"
+	},
+	"author": "Jane Austen",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/pride-and-prejudice.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice",
+	"pages": 226,
+	"title": "Pride and Prejudice",
+	"year": 1813,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aa6"
+			},
+			"name": "brianahartman",
+			"stars": 2,
+			"comment": "My co-worker Houston has one of these. He says it looks invisible."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81910"
+			},
+			"name": "destinyhudson",
+			"stars": 2,
+			"comment": "i use it every Tuesday when i'm in my homeless shelter."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ae5"
+			},
+			"name": "toddpeters",
+			"stars": 2,
+			"comment": "i use it for 10 weeks when i'm in my sauna."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81912"
+			},
+			"name": "mackenziesharp",
+			"stars": 3,
+			"comment": "heard about this on bouyon radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81950"
+			},
+			"name": "adriansnyder",
+			"stars": 4,
+			"comment": "It only works when I'm Azerbaijan."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b01"
+	},
+	"author": "Honoré de Balzac",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/le-pere-goriot.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot",
+	"pages": 443,
+	"title": "Le Père Goriot",
+	"year": 1835,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b02"
+	},
+	"author": "Samuel Beckett",
+	"country": "Republic of Ireland",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/molloy-malone-dies-the-unnamable.jpg",
+	"language": "French, English",
+	"link": "https://en.wikipedia.org/wiki/Molloy_(novel)",
+	"pages": 256,
+	"title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+	"year": 1952,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b03"
+	},
+	"author": "Giovanni Boccaccio",
+	"country": "Italy",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-decameron.jpg",
+	"language": "Italian",
+	"link": "https://en.wikipedia.org/wiki/The_Decameron",
+	"pages": 1024,
+	"title": "The Decameron",
+	"year": 1351,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a04"
+			},
+			"name": "makenziespencer",
+			"stars": 1,
+			"comment": "heard about this on balearic beat radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819dc"
+			},
+			"name": "deannalindsey",
+			"stars": 4,
+			"comment": "The box this comes in is 4 light-year by 5 inch and weights 11 megaton!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ab8"
+			},
+			"name": "thomasyoung",
+			"stars": 3,
+			"comment": "i use it for 10 weeks when i'm in my sauna."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a81"
+			},
+			"name": "briafoster",
+			"stars": 5,
+			"comment": "i use it for 10 weeks when i'm in my jail."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819ce"
+			},
+			"name": "allieshaw",
+			"stars": 4,
+			"comment": "this book is snowy."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b04"
+	},
+	"author": "Jorge Luis Borges",
+	"country": "Argentina",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/ficciones.jpg",
+	"language": "Spanish",
+	"link": "https://en.wikipedia.org/wiki/Ficciones",
+	"pages": 224,
+	"title": "Ficciones",
+	"year": 1965,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819b2"
+			},
+			"name": "derrickcoleman",
+			"stars": 3,
+			"comment": "talk about sadness!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8196a"
+			},
+			"name": "jonathanbauer",
+			"stars": 4,
+			"comment": "heard about this on compas radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a3e"
+			},
+			"name": "leticiaharrison",
+			"stars": 1,
+			"comment": "heard about this on mbube radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ac7"
+			},
+			"name": "thomasyoung",
+			"stars": 1,
+			"comment": "My neighbor Zoa has one of these. She works as a scribe and she says it looks wide."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b05"
+	},
+	"author": "Emily Brontë",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/wuthering-heights.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Wuthering_Heights",
+	"pages": 342,
+	"title": "Wuthering Heights",
+	"year": 1847,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819b3"
+			},
+			"name": "jarrededwards",
+			"stars": 4,
+			"comment": "My co-worker Kazuo has one of these. He says it looks transparent."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819fb"
+			},
+			"name": "taylorbowman",
+			"stars": 2,
+			"comment": "talk about remorse!!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b06"
+	},
+	"author": "Albert Camus",
+	"country": "Algeria, French Empire",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/l-etranger.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)",
+	"pages": 185,
+	"title": "The Stranger",
+	"year": 1942,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a03"
+			},
+			"name": "camilleblack",
+			"stars": 4,
+			"comment": "I saw one of these in Cote d'Ivoire and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b07"
+	},
+	"author": "Paul Celan",
+	"country": "Romania, France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/poems-paul-celan.jpg",
+	"language": "German",
+	"link": "",
+	"pages": 320,
+	"title": "Poems",
+	"year": 1952,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af3"
+			},
+			"name": "thomasyoung",
+			"stars": 4,
+			"comment": "I tried to scratch it but got cheeseburger all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8193f"
+			},
+			"name": "toddpeters",
+			"stars": 4,
+			"comment": "My neighbor Forest has one of these. She works as a gardener and she says it looks nude."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81956"
+			},
+			"name": "katiemendez",
+			"stars": 2,
+			"comment": "heard about this on dance-rock radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a99"
+			},
+			"name": "jordanwade",
+			"stars": 2,
+			"comment": "It only works when I'm Niue."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a9c"
+			},
+			"name": "sabrinareyes",
+			"stars": 4,
+			"comment": "this read is light-hearted."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b08"
+	},
+	"author": "Louis-Ferdinand Céline",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/voyage-au-bout-de-la-nuit.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night",
+	"pages": 505,
+	"title": "Journey to the End of the Night",
+	"year": 1932,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a65acf3297fbf81b09"
+	},
+	"author": "Miguel de Cervantes",
+	"country": "Spain",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/don-quijote-de-la-mancha.jpg",
+	"language": "Spanish",
+	"link": "https://en.wikipedia.org/wiki/Don_Quixote",
+	"pages": 1056,
+	"title": "Don Quijote De La Mancha",
+	"year": 1610,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a61"
+			},
+			"name": "douglasnavarro",
+			"stars": 3,
+			"comment": "i use it barely when i'm in my store."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b0a"
+	},
+	"author": "Geoffrey Chaucer",
+	"country": "England",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-canterbury-tales.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales",
+	"pages": 544,
+	"title": "The Canterbury Tales",
+	"year": 1450,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a3d"
+			},
+			"name": "gabriellaortega",
+			"stars": 2,
+			"comment": "My neighbor Lori has one of these. She works as a taxidermist and she says it looks whopping."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819a6"
+			},
+			"name": "leticiaharrison",
+			"stars": 1,
+			"comment": "My co-worker Archer has one of these. He says it looks crooked."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b0b"
+	},
+	"author": "Anton Chekhov",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/stories-of-anton-chekhov.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov",
+	"pages": 194,
+	"title": "Stories",
+	"year": 1886,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8192e"
+			},
+			"name": "rickycontreras",
+			"stars": 3,
+			"comment": "My co-worker Fate has one of these. He says it looks tall."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81adf"
+			},
+			"name": "sydneyavila",
+			"stars": 3,
+			"comment": "one of my hobbies is guitar. and when i'm playing guitar this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819c8"
+			},
+			"name": "makaylacurry",
+			"stars": 3,
+			"comment": "My co-worker Archer has one of these. He says it looks crooked."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a27"
+			},
+			"name": "jakeryan",
+			"stars": 5,
+			"comment": "It only works when I'm Finland."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b0c"
+	},
+	"author": "Joseph Conrad",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/nostromo.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Nostromo",
+	"pages": 320,
+	"title": "Nostromo",
+	"year": 1904,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a55"
+			},
+			"name": "deannaferguson",
+			"stars": 1,
+			"comment": "My neighbor Lular has one of these. She works as a cake decorator and she says it looks ragged."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8194a"
+			},
+			"name": "justinsimmons",
+			"stars": 2,
+			"comment": "This book works outstandingly well. It grudgingly improves my baseball by a lot."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b0d"
+	},
+	"author": "Charles Dickens",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/great-expectations.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Great_Expectations",
+	"pages": 194,
+	"title": "Great Expectations",
+	"year": 1861,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81931"
+			},
+			"name": "nikkifuller",
+			"stars": 1,
+			"comment": "this book is standard."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81964"
+			},
+			"name": "derrickcoleman",
+			"stars": 1,
+			"comment": "My scarab beetle loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a96"
+			},
+			"name": "clarencegraves",
+			"stars": 1,
+			"comment": "talk about boredom!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a09"
+			},
+			"name": "camilleblack",
+			"stars": 5,
+			"comment": "My raven loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b0e"
+	},
+	"author": "Denis Diderot",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/jacques-the-fatalist.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist",
+	"pages": 596,
+	"title": "Jacques the Fatalist",
+	"year": 1796,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81906"
+			},
+			"name": "thomasyoung",
+			"stars": 2,
+			"comment": "My vulture loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b0f"
+	},
+	"author": "Alfred Döblin",
+	"country": "Germany",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/berlin-alexanderplatz.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz",
+	"pages": 600,
+	"title": "Berlin Alexanderplatz",
+	"year": 1929,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8190f"
+			},
+			"name": "makaylacurry",
+			"stars": 2,
+			"comment": "My terrier loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8191e"
+			},
+			"name": "jasminhoffman",
+			"stars": 3,
+			"comment": "My co-worker Mitchell has one of these. He says it looks dry."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af4"
+			},
+			"name": "makenziespencer",
+			"stars": 2,
+			"comment": "talk about boredom!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8196d"
+			},
+			"name": "deannalindsey",
+			"stars": 4,
+			"comment": "I tried to shatter it but got potato all over it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b10"
+	},
+	"author": "Fyodor Dostoevsky",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/crime-and-punishment.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/Crime_and_Punishment",
+	"pages": 551,
+	"title": "Crime and Punishment",
+	"year": 1866,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b11"
+	},
+	"author": "Fyodor Dostoevsky",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-idiot.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/The_Idiot",
+	"pages": 656,
+	"title": "The Idiot",
+	"year": 1869,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b12"
+	},
+	"author": "Fyodor Dostoevsky",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-possessed.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)",
+	"pages": 768,
+	"title": "The Possessed",
+	"year": 1872,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819d2"
+			},
+			"name": "chasegross",
+			"stars": 4,
+			"comment": "talk about remorse!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81905"
+			},
+			"name": "mackenziesharp",
+			"stars": 3,
+			"comment": "The box this comes in is 3 kilometer by 5 foot and weights 16 megaton!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a39"
+			},
+			"name": "coltonblair",
+			"stars": 4,
+			"comment": "The box this comes in is 3 light-year by 5 meter and weights 10 ounce!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a02"
+			},
+			"name": "gabriellaortega",
+			"stars": 1,
+			"comment": "this read is ghetto."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81971"
+			},
+			"name": "thomasyoung",
+			"stars": 3,
+			"comment": "one of my hobbies is scuba diving. and when i'm scuba diving this works great."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b13"
+	},
+	"author": "Fyodor Dostoevsky",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-brothers-karamazov.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov",
+	"pages": 824,
+	"title": "The Brothers Karamazov",
+	"year": 1880,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a12"
+			},
+			"name": "ambersanchez",
+			"stars": 2,
+			"comment": "The box this comes in is 3 meter by 6 yard and weights 12 pound."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b14"
+	},
+	"author": "George Eliot",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/middlemarch.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Middlemarch",
+	"pages": 800,
+	"title": "Middlemarch",
+	"year": 1871,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819a8"
+			},
+			"name": "derrickcoleman",
+			"stars": 2,
+			"comment": "i use it never when i'm in my nightclub."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a69"
+			},
+			"name": "allieshaw",
+			"stars": 2,
+			"comment": "The box this comes in is 5 light-year by 6 foot and weights 17 megaton!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a18"
+			},
+			"name": "douglasfleming",
+			"stars": 5,
+			"comment": "this read is slurpee."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a46"
+			},
+			"name": "leticiaharrison",
+			"stars": 1,
+			"comment": "This read works so well. It hungrily improves my basketball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ab0"
+			},
+			"name": "derrickcoleman",
+			"stars": 4,
+			"comment": "My ant loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b15"
+	},
+	"author": "Ralph Ellison",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/invisible-man.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Invisible_Man",
+	"pages": 581,
+	"title": "Invisible Man",
+	"year": 1952,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b16"
+	},
+	"author": "Euripides",
+	"country": "Greece",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/medea.jpg",
+	"language": "Greek",
+	"link": "https://en.wikipedia.org/wiki/Medea_(play)",
+	"pages": 104,
+	"title": "Medea",
+	"year": -431,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a5e"
+			},
+			"name": "briafoster",
+			"stars": 3,
+			"comment": "This read, does exactly what it's suppose to do."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81928"
+			},
+			"name": "camilleblack",
+			"stars": 3,
+			"comment": "heard about this on bouyon radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819eb"
+			},
+			"name": "anthonytucker",
+			"stars": 2,
+			"comment": "My co-worker Atha has one of these. He says it looks narrow."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ae0"
+			},
+			"name": "justinsimmons",
+			"stars": 2,
+			"comment": "My chicken loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819af"
+			},
+			"name": "albertonorris",
+			"stars": 3,
+			"comment": "i use it daily when i'm in my outhouse."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b17"
+	},
+	"author": "William Faulkner",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/absalom-absalom.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!",
+	"pages": 313,
+	"title": "Absalom, Absalom!",
+	"year": 1936,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819c5"
+			},
+			"name": "ambersanchez",
+			"stars": 4,
+			"comment": "I tried to behead it but got truffle all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a37"
+			},
+			"name": "hayleebrady",
+			"stars": 5,
+			"comment": "talk about boredom!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a2e"
+			},
+			"name": "leticiaharrison",
+			"stars": 2,
+			"comment": "talk about bliss!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b18"
+	},
+	"author": "William Faulkner",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-sound-and-the-fury.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/The_Sound_and_the_Fury",
+	"pages": 326,
+	"title": "The Sound and the Fury",
+	"year": 1929,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a4f"
+			},
+			"name": "jasminhoffman",
+			"stars": 3,
+			"comment": "The box this comes in is 5 kilometer by 6 yard and weights 18 gram."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b19"
+	},
+	"author": "Gustave Flaubert",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/madame-bovary.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Madame_Bovary",
+	"pages": 528,
+	"title": "Madame Bovary",
+	"year": 1857,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81980"
+			},
+			"name": "clarencegraves",
+			"stars": 1,
+			"comment": "heard about this on hip-hop music radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819fc"
+			},
+			"name": "briafoster",
+			"stars": 3,
+			"comment": "one of my hobbies is cooking. and when i'm cooking this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a5c"
+			},
+			"name": "justinsimmons",
+			"stars": 1,
+			"comment": "My chicken loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a7b"
+			},
+			"name": "kaseyortega",
+			"stars": 1,
+			"comment": "It only works when I'm New Caledonia."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b1a"
+	},
+	"author": "Gustave Flaubert",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/l-education-sentimentale.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Sentimental_Education",
+	"pages": 606,
+	"title": "Sentimental Education",
+	"year": 1869,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81967"
+			},
+			"name": "hayleebrady",
+			"stars": 2,
+			"comment": "My co-worker Merwin has one of these. He says it looks bubbly."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a78"
+			},
+			"name": "hayleebrady",
+			"stars": 5,
+			"comment": "this read is light-hearted."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a15"
+			},
+			"name": "destinyhudson",
+			"stars": 1,
+			"comment": "I tried to strangle it but got hazelnut all over it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b1b"
+	},
+	"author": "Federico García Lorca",
+	"country": "Spain",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/gypsy-ballads.jpg",
+	"language": "Spanish",
+	"link": "https://en.wikipedia.org/wiki/Gypsy_Ballads",
+	"pages": 218,
+	"title": "Gypsy Ballads",
+	"year": 1928,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a85"
+			},
+			"name": "destinyhudson",
+			"stars": 1,
+			"comment": "I tried to electrocute it but got sweetmeat all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819a4"
+			},
+			"name": "ambersanchez",
+			"stars": 4,
+			"comment": "It only works when I'm Mauritania."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81908"
+			},
+			"name": "mackenziesharp",
+			"stars": 4,
+			"comment": "i use it profusely when i'm in my garage."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a50"
+			},
+			"name": "sydneyavila",
+			"stars": 4,
+			"comment": "My peacock loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819ad"
+			},
+			"name": "makaylacurry",
+			"stars": 4,
+			"comment": "I saw one of these in Haiti and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b1c"
+	},
+	"author": "Gabriel García Márquez",
+	"country": "Colombia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/one-hundred-years-of-solitude.jpg",
+	"language": "Spanish",
+	"link": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude",
+	"pages": 417,
+	"title": "One Hundred Years of Solitude",
+	"year": 1967,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81993"
+			},
+			"name": "derrickcoleman",
+			"stars": 2,
+			"comment": "It only works when I'm Martinique."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a25"
+			},
+			"name": "cassieross",
+			"stars": 5,
+			"comment": "My neighbor Isabela has one of these. She works as a taxidermist and she says it looks monochromatic."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a5f"
+			},
+			"name": "hayleebrady",
+			"stars": 4,
+			"comment": "I tried to pepper it but got prune all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a75"
+			},
+			"name": "deannaferguson",
+			"stars": 4,
+			"comment": "It only works when I'm Norway."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aaf"
+			},
+			"name": "carissachavez",
+			"stars": 2,
+			"comment": "It only works when I'm South Korea."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b1d"
+	},
+	"author": "Gabriel García Márquez",
+	"country": "Colombia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/love-in-the-time-of-cholera.jpg",
+	"language": "Spanish",
+	"link": "https://en.wikipedia.org/wiki/Love_in_the_Time_of_Cholera",
+	"pages": 368,
+	"title": "Love in the Time of Cholera",
+	"year": 1985,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a75acf3297fbf81b1e"
+	},
+	"author": "Johann Wolfgang von Goethe",
+	"country": "Saxe-Weimar",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/faust.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/Goethe%27s_Faust",
+	"pages": 158,
+	"title": "Faust",
+	"year": 1832,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a0e"
+			},
+			"name": "megangreen",
+			"stars": 1,
+			"comment": "This read works considerably well. It recklessly improves my basketball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8198c"
+			},
+			"name": "thomasyoung",
+			"stars": 2,
+			"comment": "The box this comes in is 3 yard by 6 yard and weights 19 pound!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81963"
+			},
+			"name": "allieshaw",
+			"stars": 5,
+			"comment": "I tried to scratch it but got cheeseburger all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a33"
+			},
+			"name": "albertonorris",
+			"stars": 1,
+			"comment": "talk about surprise!!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b1f"
+	},
+	"author": "Nikolai Gogol",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/dead-souls.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/Dead_Souls",
+	"pages": 432,
+	"title": "Dead Souls",
+	"year": 1842,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81933"
+			},
+			"name": "jordanwade",
+			"stars": 4,
+			"comment": "I saw one of these in Saint Pierre and Miquelon and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b20"
+	},
+	"author": "Günter Grass",
+	"country": "Germany",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-tin-drum.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/The_Tin_Drum",
+	"pages": 600,
+	"title": "The Tin Drum",
+	"year": 1959,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a21"
+			},
+			"name": "taylorbowman",
+			"stars": 5,
+			"comment": "My neighbor Allean has one of these. She works as a sky diver and she says it looks weedy."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aba"
+			},
+			"name": "rickycontreras",
+			"stars": 4,
+			"comment": "I saw one of these in Tanzania and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b21"
+	},
+	"author": "João Guimarães Rosa",
+	"country": "Brazil",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-devil-to-pay-in-the-backlands.jpg",
+	"language": "Portuguese",
+	"link": "https://en.wikipedia.org/wiki/The_Devil_to_Pay_in_the_Backlands",
+	"pages": 494,
+	"title": "The Devil to Pay in the Backlands",
+	"year": 1956,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81992"
+			},
+			"name": "deannaferguson",
+			"stars": 2,
+			"comment": "heard about this on compas radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8192d"
+			},
+			"name": "katiemendez",
+			"stars": 1,
+			"comment": "I saw one of these in New Zealand and I bought one."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a49"
+			},
+			"name": "adriansnyder",
+			"stars": 4,
+			"comment": "My neighbor Honora has one of these. She works as a reporter and she says it looks enormous."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a64"
+			},
+			"name": "justinsimmons",
+			"stars": 3,
+			"comment": "heard about this on Kansas City jazz radio, decided to give it a try."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b22"
+	},
+	"author": "Knut Hamsun",
+	"country": "Norway",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/hunger.jpg",
+	"language": "Norwegian",
+	"link": "https://en.wikipedia.org/wiki/Hunger_(Hamsun_novel)",
+	"pages": 176,
+	"title": "Hunger",
+	"year": 1890,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a08"
+			},
+			"name": "cassieross",
+			"stars": 5,
+			"comment": "My neighbor Fannie has one of these. She works as a teacher and she says it looks spiky."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a97"
+			},
+			"name": "mackenziesharp",
+			"stars": 5,
+			"comment": "The box this comes in is 4 mile by 5 yard and weights 18 pound!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a72"
+			},
+			"name": "briafoster",
+			"stars": 4,
+			"comment": "I saw one of these in The Gambia and I bought one."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81952"
+			},
+			"name": "clarencegraves",
+			"stars": 5,
+			"comment": "It only works when I'm Samoa."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81985"
+			},
+			"name": "camilleblack",
+			"stars": 3,
+			"comment": "one of my hobbies is mushroom cultivation. and when i'm cultivating mushrooms this works great."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b23"
+	},
+	"author": "Ernest Hemingway",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-old-man-and-the-sea.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea",
+	"pages": 128,
+	"title": "The Old Man and the Sea",
+	"year": 1952,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a05"
+			},
+			"name": "anthonytucker",
+			"stars": 1,
+			"comment": "My co-worker Rey has one of these. He says it looks uneven."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a41"
+			},
+			"name": "jasminhoffman",
+			"stars": 2,
+			"comment": "SoCal cockroaches are unwelcome, crafty, and tenacious. This read keeps them away."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a62"
+			},
+			"name": "allieshaw",
+			"stars": 5,
+			"comment": "I saw one of these in Juan de Nova Island and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b24"
+	},
+	"author": "Homer",
+	"country": "Greece",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-iliad-of-homer.jpg",
+	"language": "Greek",
+	"link": "https://en.wikipedia.org/wiki/Iliad",
+	"pages": 608,
+	"title": "Iliad",
+	"year": -735,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8199a"
+			},
+			"name": "katiemendez",
+			"stars": 1,
+			"comment": "It only works when I'm South Korea."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a40"
+			},
+			"name": "jonathanbauer",
+			"stars": 3,
+			"comment": "one of my hobbies is cooking. and when i'm cooking this works great."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b25"
+	},
+	"author": "Homer",
+	"country": "Greece",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-odyssey-of-homer.jpg",
+	"language": "Greek",
+	"link": "https://en.wikipedia.org/wiki/Odyssey",
+	"pages": 374,
+	"title": "Odyssey",
+	"year": -800,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81979"
+			},
+			"name": "derrickcoleman",
+			"stars": 2,
+			"comment": "The box this comes in is 3 meter by 6 yard and weights 12 pound."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ab2"
+			},
+			"name": "thomasyoung",
+			"stars": 3,
+			"comment": "My co-worker Mohamed has one of these. He says it looks brown."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af7"
+			},
+			"name": "toddpeters",
+			"stars": 3,
+			"comment": "The box this comes in is 3 yard by 6 light-year and weights 11 megaton!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819df"
+			},
+			"name": "leticiaharrison",
+			"stars": 2,
+			"comment": "It only works when I'm Kuwait."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819d7"
+			},
+			"name": "jordanwade",
+			"stars": 3,
+			"comment": "I saw one of these in Macau and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b26"
+	},
+	"author": "Henrik Ibsen",
+	"country": "Norway",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/a-Dolls-house.jpg",
+	"language": "Norwegian",
+	"link": "https://en.wikipedia.org/wiki/A_Doll%27s_House",
+	"pages": 68,
+	"title": "A Doll's House",
+	"year": 1879,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8194d"
+			},
+			"name": "tracyallen",
+			"stars": 5,
+			"comment": "My co-worker Fate has one of these. He says it looks tall."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a13"
+			},
+			"name": "leticiaharrison",
+			"stars": 1,
+			"comment": "i use it daily when i'm in my outhouse."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81916"
+			},
+			"name": "alexusrodgers",
+			"stars": 3,
+			"comment": "My neighbor Eller has one of these. She works as a butler and she says it looks smoky."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81951"
+			},
+			"name": "anthonytucker",
+			"stars": 2,
+			"comment": "I tried to kidnap it but got apricot all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81934"
+			},
+			"name": "leticiaharrison",
+			"stars": 1,
+			"comment": "It only works when I'm Martinique."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b27"
+	},
+	"author": "James Joyce",
+	"country": "Irish Free State",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/ulysses.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Ulysses_(novel)",
+	"pages": 228,
+	"title": "Ulysses",
+	"year": 1922,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8198d"
+			},
+			"name": "makaylacurry",
+			"stars": 5,
+			"comment": "My locust loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819fa"
+			},
+			"name": "paulchang",
+			"stars": 1,
+			"comment": "My neighbor Krista has one of these. She works as a salesman and she says it looks soapy."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b28"
+	},
+	"author": "Franz Kafka",
+	"country": "Czechoslovakia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/stories-of-franz-kafka.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/Franz_Kafka_bibliography#Short_stories",
+	"pages": 488,
+	"title": "Stories",
+	"year": 1924,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819f5"
+			},
+			"name": "gabriellaortega",
+			"stars": 4,
+			"comment": "My locust loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819e8"
+			},
+			"name": "emilioreynolds",
+			"stars": 2,
+			"comment": "works okay."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819b9"
+			},
+			"name": "sydneyavila",
+			"stars": 5,
+			"comment": "My co-worker Nile has one of these. He says it looks crooked."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81909"
+			},
+			"name": "jonathanbauer",
+			"stars": 5,
+			"comment": "It only works when I'm Rwanda."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b29"
+	},
+	"author": "Franz Kafka",
+	"country": "Czechoslovakia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-trial.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/The_Trial",
+	"pages": 160,
+	"title": "The Trial",
+	"year": 1925,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819a5"
+			},
+			"name": "coltonblair",
+			"stars": 5,
+			"comment": "The box this comes in is 3 yard by 6 yard and weights 19 pound!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a28"
+			},
+			"name": "coltonblair",
+			"stars": 4,
+			"comment": "heard about this on mbube radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a1e"
+			},
+			"name": "jordanwade",
+			"stars": 1,
+			"comment": "It only works when I'm Wake Island."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8196b"
+			},
+			"name": "rickycontreras",
+			"stars": 4,
+			"comment": "one of my hobbies is antique-shopping. and when i'm antique-shopping this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81917"
+			},
+			"name": "clarencegraves",
+			"stars": 4,
+			"comment": "i use it occasionally when i'm in my outhouse."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b2a"
+	},
+	"author": "Franz Kafka",
+	"country": "Czechoslovakia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-castle.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/The_Castle_(novel)",
+	"pages": 352,
+	"title": "The Castle",
+	"year": 1926,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a19"
+			},
+			"name": "kaseyortega",
+			"stars": 1,
+			"comment": "i use it once a week when i'm in my firetruck."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ac1"
+			},
+			"name": "mackenziesharp",
+			"stars": 4,
+			"comment": "It only works when I'm Rwanda."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b2b"
+	},
+	"author": "Kālidāsa",
+	"country": "India",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-recognition-of-shakuntala.jpg",
+	"language": "Sanskrit",
+	"link": "https://en.wikipedia.org/wiki/Abhij%C3%B1%C4%81na%C5%9B%C4%81kuntalam",
+	"pages": 147,
+	"title": "The recognition of Shakuntala",
+	"year": 150,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8192f"
+			},
+			"name": "leticiaharrison",
+			"stars": 5,
+			"comment": "one of my hobbies is skateboarding. and when i'm skateboarding this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af6"
+			},
+			"name": "albertonorris",
+			"stars": 1,
+			"comment": "This read works so well. It hungrily improves my basketball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819b8"
+			},
+			"name": "leticiaharrison",
+			"stars": 2,
+			"comment": "My co-worker Mohamed has one of these. He says it looks brown."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819ca"
+			},
+			"name": "ambersanchez",
+			"stars": 5,
+			"comment": "I saw one of these in French Southern and Antarctic Lands and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a85acf3297fbf81b2c"
+	},
+	"author": "Yasunari Kawabata",
+	"country": "Japan",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-sound-of-the-mountain.jpg",
+	"language": "Japanese",
+	"link": "https://en.wikipedia.org/wiki/The_Sound_of_the_Mountain",
+	"pages": 288,
+	"title": "The Sound of the Mountain",
+	"year": 1954,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8197f"
+			},
+			"name": "katiemendez",
+			"stars": 5,
+			"comment": "talk about optimism!!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819f3"
+			},
+			"name": "carissachavez",
+			"stars": 1,
+			"comment": "This book works so well. It delightedly improves my football by a lot."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b2d"
+	},
+	"author": "Nikos Kazantzakis",
+	"country": "Greece",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/zorba-the-greek.jpg",
+	"language": "Greek",
+	"link": "https://en.wikipedia.org/wiki/Zorba_the_Greek",
+	"pages": 368,
+	"title": "Zorba the Greek",
+	"year": 1946,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a2b"
+			},
+			"name": "melissawatts",
+			"stars": 4,
+			"comment": "I tried to attack it but got meatball all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81982"
+			},
+			"name": "jordanwade",
+			"stars": 3,
+			"comment": "This book works very well. It harmonically improves my tennis by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8198e"
+			},
+			"name": "douglasfleming",
+			"stars": 3,
+			"comment": "This book works outstandingly well. It beautifully improves my basketball by a lot."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b2e"
+	},
+	"author": "D. H. Lawrence",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/sons-and-lovers.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Sons_and_Lovers",
+	"pages": 432,
+	"title": "Sons and Lovers",
+	"year": 1913,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a9a"
+			},
+			"name": "brittanynewton",
+			"stars": 2,
+			"comment": "My vulture loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a7c"
+			},
+			"name": "briafoster",
+			"stars": 2,
+			"comment": "My co-worker Reed has one of these. He says it looks microscopic."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81990"
+			},
+			"name": "megangreen",
+			"stars": 5,
+			"comment": "My scarab beetle loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81915"
+			},
+			"name": "brittanynewton",
+			"stars": 5,
+			"comment": "i use it never when i'm in my nightclub."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a07"
+			},
+			"name": "camilleblack",
+			"stars": 4,
+			"comment": "My co-worker Reed has one of these. He says it looks microscopic."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b2f"
+	},
+	"author": "Halldór Laxness",
+	"country": "Iceland",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/independent-people.jpg",
+	"language": "Icelandic",
+	"link": "https://en.wikipedia.org/wiki/Independent_People",
+	"pages": 470,
+	"title": "Independent People",
+	"year": 1934,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aea"
+			},
+			"name": "ambersanchez",
+			"stars": 5,
+			"comment": "My demon loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a7a"
+			},
+			"name": "kaseyortega",
+			"stars": 2,
+			"comment": "It only works when I'm Singapore."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b30"
+	},
+	"author": "Giacomo Leopardi",
+	"country": "Italy",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/poems-giacomo-leopardi.jpg",
+	"language": "Italian",
+	"link": "",
+	"pages": 184,
+	"title": "Poems",
+	"year": 1818,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a84"
+			},
+			"name": "paulchang",
+			"stars": 5,
+			"comment": "one of my hobbies is gaming. and when i'm gaming this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8197d"
+			},
+			"name": "douglasfleming",
+			"stars": 3,
+			"comment": "This book works excessively well. It speedily improves my baseball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a5b"
+			},
+			"name": "mackenziesharp",
+			"stars": 1,
+			"comment": "I saw one of these in Canada and I bought one."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81953"
+			},
+			"name": "douglasfleming",
+			"stars": 5,
+			"comment": "I tried to behead it but got truffle all over it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b31"
+	},
+	"author": "Doris Lessing",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-golden-notebook.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/The_Golden_Notebook",
+	"pages": 688,
+	"title": "The Golden Notebook",
+	"year": 1962,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af8"
+			},
+			"name": "paulchang",
+			"stars": 5,
+			"comment": "It only works when I'm Wake Island."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a53"
+			},
+			"name": "carissachavez",
+			"stars": 4,
+			"comment": "My scarab beetle loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b32"
+	},
+	"author": "Astrid Lindgren",
+	"country": "Sweden",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/pippi-longstocking.jpg",
+	"language": "Swedish",
+	"link": "https://en.wikipedia.org/wiki/Pippi_Longstocking",
+	"pages": 160,
+	"title": "Pippi Longstocking",
+	"year": 1945,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b33"
+	},
+	"author": "Lu Xun",
+	"country": "China",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/diary-of-a-madman.jpg",
+	"language": "Chinese",
+	"link": "https://en.wikipedia.org/wiki/A_Madman%27s_Diary",
+	"pages": 389,
+	"title": "Diary of a Madman",
+	"year": 1918,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819bc"
+			},
+			"name": "douglasfleming",
+			"stars": 1,
+			"comment": "heard about this on gypsy jazz radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ad6"
+			},
+			"name": "melissawatts",
+			"stars": 2,
+			"comment": "talk about hatred."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aaa"
+			},
+			"name": "kaseyortega",
+			"stars": 4,
+			"comment": "The box this comes in is 4 mile by 5 inch and weights 19 megaton!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b34"
+	},
+	"author": "Naguib Mahfouz",
+	"country": "Egypt",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/children-of-gebelawi.jpg",
+	"language": "Arabic",
+	"link": "https://en.wikipedia.org/wiki/Children_of_Gebelawi",
+	"pages": 355,
+	"title": "Children of Gebelawi",
+	"year": 1959,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b35"
+	},
+	"author": "Thomas Mann",
+	"country": "Germany",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/buddenbrooks.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/Buddenbrooks",
+	"pages": 736,
+	"title": "Buddenbrooks",
+	"year": 1901,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81958"
+			},
+			"name": "blakecruz",
+			"stars": 5,
+			"comment": "heard about this on folktronica radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81961"
+			},
+			"name": "paulchang",
+			"stars": 5,
+			"comment": "My neighbor Isabela has one of these. She works as a taxidermist and she says it looks monochromatic."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819f2"
+			},
+			"name": "ambersanchez",
+			"stars": 4,
+			"comment": "one of my hobbies is skateboarding. and when i'm skateboarding this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aab"
+			},
+			"name": "jordanwade",
+			"stars": 1,
+			"comment": "My neighbor Georgine has one of these. She works as a fireman and she says it looks colorful."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a91"
+			},
+			"name": "ambersanchez",
+			"stars": 2,
+			"comment": "i use it never again when i'm in my station."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b36"
+	},
+	"author": "Thomas Mann",
+	"country": "Germany",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-magic-mountain.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/The_Magic_Mountain",
+	"pages": 720,
+	"title": "The Magic Mountain",
+	"year": 1924,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8193a"
+			},
+			"name": "toddpeters",
+			"stars": 5,
+			"comment": "My tiger loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b37"
+	},
+	"author": "Herman Melville",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/moby-dick.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Moby-Dick",
+	"pages": 378,
+	"title": "Moby Dick",
+	"year": 1851,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a4d"
+			},
+			"name": "blakecruz",
+			"stars": 3,
+			"comment": "I tried to hang it but got jelly bean all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aa9"
+			},
+			"name": "jordanwade",
+			"stars": 3,
+			"comment": "heard about this on alternative dance radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81966"
+			},
+			"name": "deannaferguson",
+			"stars": 4,
+			"comment": "My co-worker Tyron has one of these. He says it looks stout."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b38"
+	},
+	"author": "Michel de Montaigne",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/essais.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Essays_(Montaigne)",
+	"pages": 404,
+	"title": "Essays",
+	"year": 1595,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a60"
+			},
+			"name": "justinsimmons",
+			"stars": 3,
+			"comment": "talk about hatred."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b39"
+	},
+	"author": "Elsa Morante",
+	"country": "Italy",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/history.jpg",
+	"language": "Italian",
+	"link": "https://en.wikipedia.org/wiki/History_(novel)",
+	"pages": 600,
+	"title": "History",
+	"year": 1974,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819cb"
+			},
+			"name": "allieshaw",
+			"stars": 2,
+			"comment": "It only works when I'm Kuwait."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819c4"
+			},
+			"name": "alexusrodgers",
+			"stars": 2,
+			"comment": "one of my hobbies is spearfishing. and when i'm spearfishing this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a70"
+			},
+			"name": "jordanwade",
+			"stars": 4,
+			"comment": "talk about interest!!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81987"
+			},
+			"name": "paulchang",
+			"stars": 1,
+			"comment": "My co-worker Cato has one of these. He says it looks sopping."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b3a"
+	},
+	"author": "Toni Morrison",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/beloved.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Beloved_(novel)",
+	"pages": 321,
+	"title": "Beloved",
+	"year": 1987,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b3b"
+	},
+	"author": "Murasaki Shikibu",
+	"country": "Japan",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-tale-of-genji.jpg",
+	"language": "Japanese",
+	"link": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
+	"pages": 1360,
+	"title": "The Tale of Genji",
+	"year": 1006,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a5a"
+			},
+			"name": "blakecruz",
+			"stars": 1,
+			"comment": "one of my hobbies is drawing. and when i'm drawing this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a32"
+			},
+			"name": "leticiaharrison",
+			"stars": 1,
+			"comment": "It only works when I'm Bahrain."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8190a"
+			},
+			"name": "anthonytucker",
+			"stars": 4,
+			"comment": "heard about this on brazilian radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a34"
+			},
+			"name": "toddpeters",
+			"stars": 5,
+			"comment": "The box this comes in is 4 mile by 5 inch and weights 19 megaton!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81929"
+			},
+			"name": "allieshaw",
+			"stars": 1,
+			"comment": "My terrier loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b3c"
+	},
+	"author": "Robert Musil",
+	"country": "Austria",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-man-without-qualities.jpg",
+	"language": "German",
+	"link": "https://en.wikipedia.org/wiki/The_Man_Without_Qualities",
+	"pages": 365,
+	"title": "The Man Without Qualities",
+	"year": 1931,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a2f"
+			},
+			"name": "chasegross",
+			"stars": 3,
+			"comment": "My co-worker Erick has one of these. He says it looks fluffy."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aeb"
+			},
+			"name": "melissawatts",
+			"stars": 1,
+			"comment": "My neighbor Frona has one of these. She works as a gambler and she says it looks bearded."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8199f"
+			},
+			"name": "ambersanchez",
+			"stars": 3,
+			"comment": "one of my hobbies is antique-shopping. and when i'm antique-shopping this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ad0"
+			},
+			"name": "sabrinareyes",
+			"stars": 1,
+			"comment": "My neighbor Zoa has one of these. She works as a scribe and she says it looks wide."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b3d"
+	},
+	"author": "Vladimir Nabokov",
+	"country": "Russia/United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/lolita.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Lolita",
+	"pages": 317,
+	"title": "Lolita",
+	"year": 1955,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819de"
+			},
+			"name": "cassieross",
+			"stars": 2,
+			"comment": "The box this comes in is 5 foot by 6 inch and weights 17 pound!!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b3e"
+	},
+	"author": "George Orwell",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/nineteen-eighty-four.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
+	"pages": 272,
+	"title": "Nineteen Eighty-Four",
+	"year": 1949,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8193c"
+			},
+			"name": "douglasfleming",
+			"stars": 1,
+			"comment": "one of my hobbies is gaming. and when i'm gaming this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a68"
+			},
+			"name": "jakeryan",
+			"stars": 4,
+			"comment": "My macaroni penguin loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ae6"
+			},
+			"name": "douglasnavarro",
+			"stars": 3,
+			"comment": "My tiger loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a26"
+			},
+			"name": "paulchang",
+			"stars": 1,
+			"comment": "I saw one of these in New Zealand and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b3f"
+	},
+	"author": "Ovid",
+	"country": "Roman Empire",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-metamorphoses-of-ovid.jpg",
+	"language": "Classical Latin",
+	"link": "https://en.wikipedia.org/wiki/Metamorphoses",
+	"pages": 576,
+	"title": "Metamorphoses",
+	"year": 100,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a82"
+			},
+			"name": "albertonorris",
+			"stars": 4,
+			"comment": "The box this comes in is 5 yard by 6 centimeter and weights 18 gram!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b40"
+	},
+	"author": "Fernando Pessoa",
+	"country": "Portugal",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-book-of-disquiet.jpg",
+	"language": "Portuguese",
+	"link": "https://en.wikipedia.org/wiki/The_Book_of_Disquiet",
+	"pages": 272,
+	"title": "The Book of Disquiet",
+	"year": 1928,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a24"
+			},
+			"name": "megangreen",
+			"stars": 4,
+			"comment": "My co-worker Namon has one of these. He says it looks funny-looking."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8192a"
+			},
+			"name": "albertonorris",
+			"stars": 4,
+			"comment": "This book works too well. It buoyantly improves my football by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81930"
+			},
+			"name": "alexusrodgers",
+			"stars": 3,
+			"comment": "I tried to annihilate it but got bonbon all over it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b41"
+	},
+	"author": "Edgar Allan Poe",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/tales-and-poems-of-edgar-allan-poe.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Edgar_Allan_Poe_bibliography#Tales",
+	"pages": 842,
+	"title": "Tales",
+	"year": 1950,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b42"
+	},
+	"author": "Marcel Proust",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/a-la-recherche-du-temps-perdu.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/In_Search_of_Lost_Time",
+	"pages": 2408,
+	"title": "In Search of Lost Time",
+	"year": 1920,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8191a"
+			},
+			"name": "jarrededwards",
+			"stars": 5,
+			"comment": "My neighbor Krista has one of these. She works as a salesman and she says it looks soapy."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a7d"
+			},
+			"name": "derrickcoleman",
+			"stars": 2,
+			"comment": "talk about sadness!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662a95acf3297fbf81b43"
+	},
+	"author": "François Rabelais",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/gargantua-and-pantagruel.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel",
+	"pages": 623,
+	"title": "Gargantua and Pantagruel",
+	"year": 1533,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81991"
+			},
+			"name": "mackenziesharp",
+			"stars": 1,
+			"comment": "I saw one of these in Haiti and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b44"
+	},
+	"author": "Juan Rulfo",
+	"country": "Mexico",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/pedro-paramo.jpg",
+	"language": "Spanish",
+	"link": "https://en.wikipedia.org/wiki/Pedro_P%C3%A1ramo",
+	"pages": 124,
+	"title": "Pedro Páramo",
+	"year": 1955,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81986"
+			},
+			"name": "thomasyoung",
+			"stars": 4,
+			"comment": "This book works considerably well. It secretly improves my basketball by a lot."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b45"
+	},
+	"author": "Rumi",
+	"country": "Sultanate of Rum",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-masnavi.jpg",
+	"language": "Persian",
+	"link": "https://en.wikipedia.org/wiki/Masnavi",
+	"pages": 438,
+	"title": "The Masnavi",
+	"year": 1236,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8195e"
+			},
+			"name": "jarrededwards",
+			"stars": 5,
+			"comment": "i use it for 10 weeks when i'm in my sauna."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a6f"
+			},
+			"name": "adriansnyder",
+			"stars": 2,
+			"comment": "This read works really well. It wildly improves my baseball by a lot."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b46"
+	},
+	"author": "Salman Rushdie",
+	"country": "United Kingdom, India",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/midnights-children.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Midnight%27s_Children",
+	"pages": 536,
+	"title": "Midnight's Children",
+	"year": 1981,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ad3"
+			},
+			"name": "leticiaharrison",
+			"stars": 3,
+			"comment": "My scarab beetle loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b47"
+	},
+	"author": "Saadi",
+	"country": "Persia, Persian Empire",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/bostan.jpg",
+	"language": "Persian",
+	"link": "https://en.wikipedia.org/wiki/Bustan_(book)",
+	"pages": 298,
+	"title": "Bostan",
+	"year": 1257,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aa7"
+			},
+			"name": "deannaferguson",
+			"stars": 5,
+			"comment": "heard about this on melodic death metal radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81960"
+			},
+			"name": "toddpeters",
+			"stars": 3,
+			"comment": "This book works so well. It imperfectly improves my baseball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81947"
+			},
+			"name": "megangreen",
+			"stars": 2,
+			"comment": "My neighbor Forest has one of these. She works as a gardener and she says it looks nude."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ad8"
+			},
+			"name": "makaylacurry",
+			"stars": 5,
+			"comment": "I tried to strangle it but got hazelnut all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81965"
+			},
+			"name": "anthonytucker",
+			"stars": 1,
+			"comment": "heard about this on powerviolence radio, decided to give it a try."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b48"
+	},
+	"author": "Tayeb Salih",
+	"country": "Sudan",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/season-of-migration-to-the-north.jpg",
+	"language": "Arabic",
+	"link": "https://en.wikipedia.org/wiki/Season_of_Migration_to_the_North",
+	"pages": 139,
+	"title": "Season of Migration to the North",
+	"year": 1966,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a6a"
+			},
+			"name": "deannalindsey",
+			"stars": 2,
+			"comment": "My neighbor Lori has one of these. She works as a taxidermist and she says it looks whopping."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a0b"
+			},
+			"name": "toddpeters",
+			"stars": 5,
+			"comment": "My co-worker Erick has one of these. He says it looks fluffy."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81911"
+			},
+			"name": "camilleblack",
+			"stars": 5,
+			"comment": "heard about this on Kansas City jazz radio, decided to give it a try."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ada"
+			},
+			"name": "brianahartman",
+			"stars": 1,
+			"comment": "My co-worker Mitchell has one of these. He says it looks dry."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aef"
+			},
+			"name": "sydneyavila",
+			"stars": 4,
+			"comment": "talk about bliss!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b49"
+	},
+	"author": "José Saramago",
+	"country": "Portugal",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/blindness.jpg",
+	"language": "Portuguese",
+	"link": "https://en.wikipedia.org/wiki/Blindness_(novel)",
+	"pages": 352,
+	"title": "Blindness",
+	"year": 1995,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819ba"
+			},
+			"name": "hayleebrady",
+			"stars": 4,
+			"comment": "this book is whole-grain."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a17"
+			},
+			"name": "nikkifuller",
+			"stars": 1,
+			"comment": "It only works when I'm Bahrain."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b4a"
+	},
+	"author": "William Shakespeare",
+	"country": "England",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/hamlet.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Hamlet",
+	"pages": 432,
+	"title": "Hamlet",
+	"year": 1603,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b4b"
+	},
+	"author": "William Shakespeare",
+	"country": "England",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/king-lear.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/King_Lear",
+	"pages": 384,
+	"title": "King Lear",
+	"year": 1608,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a71"
+			},
+			"name": "camilleblack",
+			"stars": 5,
+			"comment": "i use it profusely when i'm in my garage."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b4c"
+	},
+	"author": "William Shakespeare",
+	"country": "England",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/othello.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Othello",
+	"pages": 314,
+	"title": "Othello",
+	"year": 1609,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81983"
+			},
+			"name": "jasminhoffman",
+			"stars": 1,
+			"comment": "this book is light-hearted."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81970"
+			},
+			"name": "cassieross",
+			"stars": 1,
+			"comment": "My co-worker Fate has one of these. He says it looks tall."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a59"
+			},
+			"name": "douglasnavarro",
+			"stars": 3,
+			"comment": "My co-worker Archer has one of these. He says it looks crooked."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a7f"
+			},
+			"name": "katiemendez",
+			"stars": 5,
+			"comment": "This read works very well. It harmonically improves my tennis by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8195b"
+			},
+			"name": "deannalindsey",
+			"stars": 3,
+			"comment": "My neighbor Albertina has one of these. She works as a gardener and she says it looks humongous."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b4d"
+	},
+	"author": "Sophocles",
+	"country": "Greece",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/oedipus-the-king.jpg",
+	"language": "Greek",
+	"link": "https://en.wikipedia.org/wiki/Oedipus_the_King",
+	"pages": 88,
+	"title": "Oedipus the King",
+	"year": -430,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81913"
+			},
+			"name": "allieshaw",
+			"stars": 2,
+			"comment": "My dog loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819bd"
+			},
+			"name": "deannaferguson",
+			"stars": 5,
+			"comment": "I saw one of these in Tanzania and I bought one."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b4e"
+	},
+	"author": "Stendhal",
+	"country": "France",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/le-rouge-et-le-noir.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/The_Red_and_the_Black",
+	"pages": 576,
+	"title": "The Red and the Black",
+	"year": 1830,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b4f"
+	},
+	"author": "Laurence Sterne",
+	"country": "England",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-life-and-opinions-of-tristram-shandy.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/The_Life_and_Opinions_of_Tristram_Shandy,_Gentleman",
+	"pages": 640,
+	"title": "The Life And Opinions of Tristram Shandy",
+	"year": 1760,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aed"
+			},
+			"name": "jakeryan",
+			"stars": 5,
+			"comment": "My neighbor Victoria has one of these. She works as a professor and she says it looks menthol."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ac4"
+			},
+			"name": "allieshaw",
+			"stars": 5,
+			"comment": "This read works so well. It imperfectly improves my baseball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81914"
+			},
+			"name": "coltonblair",
+			"stars": 1,
+			"comment": "I tried to shred it but got watermelon all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81af2"
+			},
+			"name": "melissawatts",
+			"stars": 3,
+			"comment": "i use it barely when i'm in my store."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b50"
+	},
+	"author": "Italo Svevo",
+	"country": "Italy",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/confessions-of-zeno.jpg",
+	"language": "Italian",
+	"link": "https://en.wikipedia.org/wiki/Zeno%27s_Conscience",
+	"pages": 412,
+	"title": "Confessions of Zeno",
+	"year": 1923,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81aad"
+			},
+			"name": "ambersanchez",
+			"stars": 4,
+			"comment": "I tried to slay it but got truffle all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8196f"
+			},
+			"name": "douglasfleming",
+			"stars": 3,
+			"comment": "This book works outstandingly well. It grudgingly improves my baseball by a lot."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ae4"
+			},
+			"name": "justinsimmons",
+			"stars": 1,
+			"comment": "My neighbor Frona has one of these. She works as a gambler and she says it looks bearded."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81974"
+			},
+			"name": "emilioreynolds",
+			"stars": 3,
+			"comment": "talk about interest!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b51"
+	},
+	"author": "Jonathan Swift",
+	"country": "Ireland",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/gullivers-travels.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Gulliver%27s_Travels",
+	"pages": 178,
+	"title": "Gulliver's Travels",
+	"year": 1726,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819e1"
+			},
+			"name": "toddpeters",
+			"stars": 1,
+			"comment": "I saw one of these in Bhutan and I bought one."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8196c"
+			},
+			"name": "derrickcoleman",
+			"stars": 4,
+			"comment": "I saw one of these in Canada and I bought one."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a35"
+			},
+			"name": "makaylacurry",
+			"stars": 3,
+			"comment": "one of my hobbies is baking. and when i'm baking this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819d8"
+			},
+			"name": "makaylacurry",
+			"stars": 4,
+			"comment": "My neighbor Montserrat has one of these. She works as a circus performer and she says it looks shriveled."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a6b"
+			},
+			"name": "briafoster",
+			"stars": 1,
+			"comment": "It only works when I'm Bolivia."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b52"
+	},
+	"author": "Leo Tolstoy",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/war-and-peace.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/War_and_Peace",
+	"pages": 1296,
+	"title": "War and Peace",
+	"year": 1867,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819cd"
+			},
+			"name": "leticiaharrison",
+			"stars": 4,
+			"comment": "i use it never again when i'm in my station."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a4a"
+			},
+			"name": "deannalindsey",
+			"stars": 4,
+			"comment": "The box this comes in is 5 kilometer by 5 inch and weights 13 kilogram!!!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b53"
+	},
+	"author": "Leo Tolstoy",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/anna-karenina.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/Anna_Karenina",
+	"pages": 864,
+	"title": "Anna Karenina",
+	"year": 1877,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81957"
+			},
+			"name": "carissachavez",
+			"stars": 1,
+			"comment": "talk about sadness!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a44"
+			},
+			"name": "kaseyortega",
+			"stars": 1,
+			"comment": "This read works too well. It nonchalantly improves my baseball by a lot."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b54"
+	},
+	"author": "Leo Tolstoy",
+	"country": "Russia",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-death-of-ivan-ilyich.jpg",
+	"language": "Russian",
+	"link": "https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich",
+	"pages": 92,
+	"title": "The Death of Ivan Ilyich",
+	"year": 1886,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a9d"
+			},
+			"name": "jakeryan",
+			"stars": 1,
+			"comment": "My neighbor Germaine has one of these. She works as a salesman and she says it looks red."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf8196e"
+			},
+			"name": "sabrinareyes",
+			"stars": 3,
+			"comment": "The box this comes in is 5 kilometer by 6 meter and weights 20 ounce!"
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a06"
+			},
+			"name": "nikkifuller",
+			"stars": 4,
+			"comment": "My co-worker Delton has one of these. He says it looks slender."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b55"
+	},
+	"author": "Mark Twain",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-adventures-of-huckleberry-finn.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn",
+	"pages": 224,
+	"title": "The Adventures of Huckleberry Finn",
+	"year": 1884,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a56"
+			},
+			"name": "melissawatts",
+			"stars": 4,
+			"comment": "talk about pleasure!"
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b56"
+	},
+	"author": "Valmiki",
+	"country": "India",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/ramayana.jpg",
+	"language": "Sanskrit",
+	"link": "https://en.wikipedia.org/wiki/Ramayana",
+	"pages": 152,
+	"title": "Ramayana",
+	"year": -450,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662aa5acf3297fbf81b57"
+	},
+	"author": "Virgil",
+	"country": "Roman Empire",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-aeneid.jpg",
+	"language": "Classical Latin",
+	"link": "https://en.wikipedia.org/wiki/Aeneid",
+	"pages": 442,
+	"title": "The Aeneid",
+	"year": -23,
+	"reviews": []
+},
+{
+	"_id": {
+		"$oid": "61b662ab5acf3297fbf81b58"
+	},
+	"author": "Vyasa",
+	"country": "India",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-mahab-harata.jpg",
+	"language": "Sanskrit",
+	"link": "https://en.wikipedia.org/wiki/Mahabharata",
+	"pages": 276,
+	"title": "Mahabharata",
+	"year": -700,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81942"
+			},
+			"name": "clarencegraves",
+			"stars": 3,
+			"comment": "My jaguar loves to play with it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662ab5acf3297fbf81b59"
+	},
+	"author": "Walt Whitman",
+	"country": "United States",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/leaves-of-grass.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Leaves_of_Grass",
+	"pages": 152,
+	"title": "Leaves of Grass",
+	"year": 1855,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a94"
+			},
+			"name": "jakeryan",
+			"stars": 3,
+			"comment": "My bass loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81abe"
+			},
+			"name": "makaylacurry",
+			"stars": 1,
+			"comment": "It only works when I'm Niger."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662ab5acf3297fbf81b5a"
+	},
+	"author": "Virginia Woolf",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/mrs-dalloway.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/Mrs_Dalloway",
+	"pages": 216,
+	"title": "Mrs Dalloway",
+	"year": 1925,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81ab1"
+			},
+			"name": "derrickcoleman",
+			"stars": 5,
+			"comment": "My co-worker Alek has one of these. He says it looks white."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662ab5acf3297fbf81b5b"
+	},
+	"author": "Virginia Woolf",
+	"country": "United Kingdom",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/to-the-lighthouse.jpg",
+	"language": "English",
+	"link": "https://en.wikipedia.org/wiki/To_the_Lighthouse",
+	"pages": 209,
+	"title": "To the Lighthouse",
+	"year": 1927,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf819f4"
+			},
+			"name": "brianahartman",
+			"stars": 3,
+			"comment": "one of my hobbies is skateboarding. and when i'm skateboarding this works great."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a6c"
+			},
+			"name": "blakecruz",
+			"stars": 2,
+			"comment": "i use it never when i'm in my hotel."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81abf"
+			},
+			"name": "sabrinareyes",
+			"stars": 5,
+			"comment": "My dog loves to play with it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf819a9"
+			},
+			"name": "carissachavez",
+			"stars": 2,
+			"comment": "I tried to grab it but got bonbon all over it."
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "61b662ab5acf3297fbf81b5c"
+	},
+	"author": "Marguerite Yourcenar",
+	"country": "France/Belgium",
+	"imageLink": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/memoirs-of-hadrian.jpg",
+	"language": "French",
+	"link": "https://en.wikipedia.org/wiki/Memoirs_of_Hadrian",
+	"pages": 408,
+	"title": "Memoirs of Hadrian",
+	"year": 1951,
+	"reviews": [
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a80"
+			},
+			"name": "melissawatts",
+			"stars": 3,
+			"comment": "My neighbor Krista has one of these. She works as a salesman and she says it looks soapy."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a55acf3297fbf81981"
+			},
+			"name": "jonathanbauer",
+			"stars": 3,
+			"comment": "I tried to belly-flop it but got Turkish Delight all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a36"
+			},
+			"name": "ambersanchez",
+			"stars": 4,
+			"comment": "I tried to electrocute it but got sweetmeat all over it."
+		},
+		{
+			"_id": {
+				"$oid": "61b662a65acf3297fbf81a31"
+			},
+			"name": "deannaferguson",
+			"stars": 4,
+			"comment": "My neighbor Albertina has one of these. She works as a gardener and she says it looks humongous."
+		}
+	]
+}]
+
