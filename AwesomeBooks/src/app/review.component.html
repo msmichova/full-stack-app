@@ -6,12 +6,10 @@
                 <div *ngFor="let review of reviews | async"> -->
                     <div *ngFor="let review of review | async">
                         <div class="card bg-light mb-3"
-                        [routerLink]="['/books', book._id, 'reviews', review._id]"
                         style="width: 40rem; margin: auto;">
                             <div class="card-header bg-secondary text-white">
                                 Review by 
                                 {{review.name}}
-                                <!-- on {{review.date.substr(0, 10) | date}} -->
                             </div>
                             <div class="card-body">
                                 <p class="comment">{{review.comment}}</p>
@@ -90,8 +88,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <!-- <span *ngIf="isIncomplete()" class="error">You must complete all fields</span>

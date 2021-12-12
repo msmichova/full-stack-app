@@ -64,8 +64,8 @@ export class BooksComponent {
       this.webService.postBook(this.addBookForm.value)
       .subscribe((response: any) => {        
           this.addBookForm.reset();
+          location.reload();
       }); 
-      console.log('Submitted!');   
   }
 
   onSortByClicked(order: any) {
@@ -78,7 +78,7 @@ export class BooksComponent {
     });   
   }
 
-    book_list: any = [];     // to avoid type checking errors
+    book_list: any = [];
     page: number = 1;
     order: string = 'author_desc';
     books: any = [];

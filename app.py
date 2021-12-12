@@ -12,8 +12,8 @@ CORS(app)
 
 client = MongoClient("mongodb://127.0.0.1:27017")
 
-db = client.booksDB              # select the database
-books = db.books      # select the collection
+db = client.booksDB
+books = db.books
 users = db.users
 blacklist = db.blacklist
 
@@ -279,22 +279,19 @@ def fetch_one_review(bid, rid):
     # print(bid, type(bid))
     # print(rid, type(rid))
     if checkHex(str(bid)) == False:
-        return make_response( jsonify({"error" : "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid book ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     elif checkHex(str(rid)) == False:
-        return make_response( jsonify({"error" : "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404 )
+        return make_response(jsonify({"error": "Invalid review. ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
-
-        # Only works in Postman
-        book = books.find_one( { "reviews._id" : ObjectId(rid) }, { "_id" : 0, "reviews.$" : 1 } )
-        # Only works in http://localhost:5000/
-        # book = books.find_one( { "reviews._id" : rid }, { "_id" : 0, "reviews.$" : 1 } )
+        book = books.find_one({"reviews._id": ObjectId(rid)}, {
+                              "_id": 0, "reviews.$": 1})
         if book is None:
-            return make_response( jsonify( {"error":"Invalid book ID or review ID"}),404)
-        
+            return make_response(jsonify({"error": "Invalid book ID or review ID"}), 404)
+
         book['reviews'][0]['_id'] = str(book['reviews'][0]['_id'])
 
         # IMPORTANT: returning an array containing a single review
-        return make_response( jsonify( [book['reviews'][0]] ), 200)
+        return make_response(jsonify([book['reviews'][0]]), 200)
 
 
 # EXTRA FEATURE: Checking that all fields are filled out
@@ -314,7 +311,7 @@ def edit_review(bid, rid):
             "reviews.$.stars": request.form['stars']
         }
         books.update_one(
-            {"reviews._id": ObjectId(rid)}, \
+            {"reviews._id": ObjectId(rid)},
             {"$set": edited_review})
         edit_review_url = \
             "http://localhost:5000/api/v1.0/books/" + \
@@ -335,9 +332,9 @@ def delete_review(bid, rid):
         return make_response(jsonify({"error": "Invalid review ID - book ID must be supplied as a 24-character hexadecimal string"}), 404)
     else:
         books.update_one(
-            {"_id": ObjectId(bid)}, \
-            {"$pull": {"reviews": \
-            {"_id": ObjectId(rid)} } } )
+            {"_id": ObjectId(bid)},
+            {"$pull": {"reviews":
+                       {"_id": ObjectId(rid)}}})
         print(books.find_one({"_id": ObjectId(bid)}))
         return make_response(jsonify({}), 204)
 
@@ -351,10 +348,10 @@ def login():
         if user is not None:
             if bcrypt.checkpw(bytes(auth.password, "UTF-8"), user["password"]):
                 token = jwt.encode(
-                    {'user': auth.username, \
-                        'admin': user["isAdmin"], \
-                        'exp': datetime.datetime.utcnow() + \
-                        datetime.timedelta(minutes=30) \
+                    {'user': auth.username,
+                        'admin': user["isAdmin"],
+                        'exp': datetime.datetime.utcnow() +
+                        datetime.timedelta(minutes=30)
                      }, app.config['SECRET_KEY'])
                 return make_response(jsonify({'token': token.decode('UTF-8')}), 200)
             else:

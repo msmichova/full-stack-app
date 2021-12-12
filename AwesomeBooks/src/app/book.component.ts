@@ -22,13 +22,6 @@ export class BookComponent {
         public authService: AuthService,
     ) {}
 
-    // async ngOnInit() {    // fired automatically whenever an object has been created
-    //     var response = await this.webService.getBook(
-    //         this.route.snapshot.params.id
-    //     );
-    //     this.book = response;    
-    // }
-
     ngOnInit() {
 
         this.reviewForm = this.formBuilder.group({
@@ -64,13 +57,12 @@ export class BookComponent {
             this.route.snapshot.params.id
         )
 
-        // this.review = this.webService.getReview(
-        //     this.route.snapshot.params.bid,
-        //     this.route.snapshot.params.rid
-        // )
+       this.noOfReviews = this.reviews.forEach(() => {
+        this.noOfReviews = this.noOfReviews + 1;
+    });
+
     } 
     onSubmit() {
-        // console.log(this.reviewForm.value);
         this.webService.postReview(this.reviewForm.value)
             .subscribe((response: any) => {
                 this.reviewForm.reset();
@@ -99,49 +91,26 @@ export class BookComponent {
     onBookDelete() {
         this.webService.deleteBook(this.route.snapshot.params.id)
             .subscribe((response: any) => {
-                console.log({response});
-                // location.reload();
                 window.location.replace("http://localhost:4200/books/");
             });    
     }
 
-    onBookEditSubmit() {
-        
+    onBookEditSubmit() {      
         this.webService.putBook(this.editBookForm.value)
         .subscribe((response: any) => {
-
             this.editBookForm.reset();
             this.book = this.webService.getBook(
                 this.route.snapshot.params.id
             );
+            location.reload();
         }); 
-        console.log('Submitted!');
         
     }
-
-    // onReviewEditSubmit(){
-    //     this.webService.putReview(this.editReviewForm.value)
-    //         .subscribe((response: any) => {
-    //             this.editReviewForm.reset();
-    //             this.reviews = this.webService.getReviews(
-    //                 this.route.snapshot.params.id
-    //             );
-    //         });      
-    // }
-
-    // onReviewDelete(){
-    //     this.webService.deleteReview(this.review)
-    //     .subscribe((response: any) => {
-    //         console.log({response});
-    //         location.reload();
-    //         // window.location.replace("http://localhost:4200/books/");
-    //     }); 
-
-    // }
 
     books: any = [];
     book: any = [];
     reviews: any = [];
     review: any = [];
+    noOfReviews: any = 0;
 }
 

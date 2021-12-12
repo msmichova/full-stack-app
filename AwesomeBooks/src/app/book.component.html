@@ -32,10 +32,9 @@
                     </div>
                     <div class="card-body">
                         <img src="https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/{{book.imageLink}}" height="200"/>
-                        <!-- <p class="card-text">Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.</p> -->
                     </div>
                     <!-- <div class="card-footer">
-                        <a href="https://loremipsum.io/ultimate-list-of-lorem-ipsum-generators/">-> Hipster Ipsum source</a>
+                        <p>{{noOfReviews}}</p>
                     </div> -->
                 </div>
             </div>
@@ -67,7 +66,6 @@
                         <div class="card-header bg-secondary text-white">
                             Review by 
                             {{review.name}}
-                            <!-- on {{review.date.substr(0, 10) | date}} -->
                         </div>
                         <div class="card-body">
                             <p class="comment">{{review.comment}}</p>
@@ -149,10 +147,6 @@
             <button *ngIf="!isIncomplete()" type="submit" class="btn btn-primary">Submit</button> -->
         </form>
     </div>
-    <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
-    </div> -->
     </div>
 </div>
 </div>
@@ -203,11 +197,4 @@
         </div>
     </div>
     </div>
-
-
-<!-- Modal Script -->
-<!-- <script>
-    $('#editBookModal').on('shown.bs.modal', function () {
-        $('#title').trigger('focus')
-    })
-</script> -->
+    

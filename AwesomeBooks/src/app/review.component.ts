@@ -41,12 +41,7 @@ export class ReviewComponent {
         this.review = this.webService.getReview(
             this.route.snapshot.params.bid,
             this.route.snapshot.params.rid
-        )
-        // .subscribe(review => {
-        //     this.review = review;
-        //     // console.log(this.review);
-        // })
-        ;
+        );
     } 
 
     onReviewEditSubmit(){
@@ -56,6 +51,7 @@ export class ReviewComponent {
             this.reviews = this.webService.getReviews(
                 this.route.snapshot.params.id
             );
+            location.reload();
         });      
     }
 
@@ -68,7 +64,6 @@ export class ReviewComponent {
         )
         .subscribe((response: any) => {
             console.log({response});
-            // location.reload();
             window.location.replace("http://localhost:4200/books/" + this.book);
         }); 
     }
